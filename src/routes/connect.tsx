@@ -6,7 +6,7 @@ export default function Connect() {
 	return (
 		<main>
 			<div class="flex flex-col gap-6 max-w-5xl mx-auto">
-				<Title>Connect</Title>
+				<Title>Connect | Justin Cox Portfolio</Title>
 				<div class="my-5">
 					<PageTitle title="Connect" isCentered/>
 				</div>

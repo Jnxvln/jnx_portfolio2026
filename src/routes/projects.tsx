@@ -10,7 +10,7 @@ export default function Projects() {
 
 	return (
 		<main>
-			<Title>Projects</Title>
+			<Title>Projects | Justin Cox Portfolio</Title>
 			<div class="py-5">
 				<PageTitle title="Projects" isCentered/>
 			</div>

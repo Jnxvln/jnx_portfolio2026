@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<main>
 			<div class="flex flex-col gap-6 max-w-5xl mx-auto">
-				<Title>Justin Cox | Portfolio (2026)</Title>
+				<Title>Justin Cox Portfolio</Title>
 
 				<div class="py-5">
 					<PageTitle title="Portfolio" isCentered/>

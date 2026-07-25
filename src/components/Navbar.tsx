@@ -1,33 +1,53 @@
+import {createSignal} from "solid-js";
 import {useLocation} from "@solidjs/router";
 
 export default function Navbar() {
 
 	const location = useLocation();
 	const isActive = (path: string) => location.pathname === path;
+	const [isOpen, setIsOpen] = createSignal(false);
+
+	const linkClass =
+		"px-3 py-3 font-bold hover:bg-[#B2C0D4] transition duration-150 block sm:inline-block";
 
 	return (
-		<div class="flex bg-slate-300">
-			<a
-				class="px-5 py-3 hover:bg-slate-400 transition duration-150"
-				classList={{"bg-slate-400": isActive("/")}}
-				href="/"
-			>
-				Home
-			</a>
-			<a
-				class="px-5 py-3 hover:bg-slate-400 transition duration-150"
-				classList={{"bg-slate-400": isActive("/projects")}}
-				href="/projects"
-			>
-				Projects
-			</a>
-			<a
-				class="px-5 py-3 hover:bg-slate-400 transition duration-150"
-				classList={{"bg-slate-400": isActive("/connect")}}
-				href="/connect"
-			>
-				Connect
-			</a>
-		</div>
+		<nav class="bg-slate-300">
+			<div class="flex items-center justify-between">
+				<a href="/" class={linkClass} classList={{"bg-slate-400": isActive("/")}}>Home</a>
+
+				{/*	Desktop lnks */}
+				<div class="hidden sm:flex">
+					<a href="/projects" class={linkClass} classList={{"bg-slate-400": isActive("/projects")}}>Projects</a>
+					<a href="/connect" class={linkClass} classList={{"bg-slate-400": isActive("/connect")}}>Connect</a>
+				</div>
+
+				{/*	Hamburger toggle, mobile only */}
+				<button
+					class="px-5 py-3 sm:hidden hover:cursor-pointer"
+					onClick={() => setIsOpen(!isOpen())}
+					aria-label="Toggle navigation menu"
+					aria-expanded={isOpen()}
+				>
+					<span class="font-bold">☰</span>
+				</button>
+			</div>
+
+			{/*	Mobile dropdown */}
+			<div class="flex flex-col sm:hidden" classList={{hidden: !isOpen()}}>
+				<a
+					href="/projects"
+					class={linkClass}
+					classList={{"bg-slate-400": isActive("/projects")}}
+					onClick={() => setIsOpen(false)}
+				>Projects</a>
+
+				<a
+					href="/connect"
+					class={linkClass}
+					classList={{"bg-slate-400": isActive("/connect")}}
+					onClick={() => setIsOpen(false)}
+				>Connect</a>
+			</div>
+		</nav>
 	)
 }
