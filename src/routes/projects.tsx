@@ -35,7 +35,7 @@ export default function Projects() {
 				<PageTitle title="Projects" isCentered/>
 			</div>
 
-			<div class="flex flex-col gap-3 max-w-5xl px-8 py-5">
+			<div class="sticky top-12 z-40 bg-white px-8 py-5 max-w-5xl">
 				<TagFilter
 					allTags={allTags}
 					selectedTags={selectedTags()}

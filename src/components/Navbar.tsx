@@ -11,7 +11,7 @@ export default function Navbar() {
 		"px-3 py-3 font-bold hover:bg-[#B2C0D4] transition duration-150 block sm:inline-block";
 
 	return (
-		<nav class="bg-slate-300">
+		<nav class="bg-slate-300 sticky top-0 z-50">
 			<div class="flex items-center justify-between">
 				<a href="/" class={linkClass} classList={{"bg-slate-400": isActive("/")}}>Home</a>
 
