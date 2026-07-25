@@ -1,7 +1,9 @@
+import {For} from "solid-js";
 import type {ProjectType} from "~/types/project";
 
 type ProjectCardProps = {
 	project: ProjectType;
+	onTagClick: (tag: string) => void;
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
@@ -33,14 +35,20 @@ export default function ProjectCard(props: ProjectCardProps) {
 				</p>
 
 				<ul class="flex flex-wrap gap-1.5" aria-label="Tech stack">
-					{props.project.stack.map((tech) => (
-						<li
-							title={tech}
-							class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600"
-						>
-							{tech}
-						</li>
-					))}
+					<For each={props.project.stack}>
+						{(tech) => (
+							<li>
+								<button
+									type="button"
+									title={`Filter by ${tech}`}
+									onClick={() => props.onTagClick(tech)}
+									class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 hover:cursor-pointer"
+								>
+									{tech}
+								</button>
+							</li>
+						)}
+					</For>
 				</ul>
 
 				<div class="mt-auto flex gap-4 pt-2 text-sm">
