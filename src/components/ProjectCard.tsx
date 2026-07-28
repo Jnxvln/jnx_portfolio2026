@@ -30,6 +30,10 @@ export default function ProjectCard(props: ProjectCardProps) {
 					</h3>
 				</a>
 
+				<div class="mt-auto flex gap-2 text-sm text-gray-600">
+					Created {props.project.datePublished}
+				</div>
+
 				<p class="line-clamp-3 text-sm text-gray-600">
 					{props.project.description}
 				</p>

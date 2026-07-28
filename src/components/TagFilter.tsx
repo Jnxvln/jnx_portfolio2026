@@ -18,8 +18,8 @@ export default function TagFilter(props: TagFilterProps) {
 
 		return props.allTags
 			.filter((tag) => !selected.has(tag.toLowerCase()))
-			.filter((tag) => q === "" || tag.toLowerCase().includes(q))
-			.slice(0, 8);
+			.filter((tag) => q === "" || tag.toLowerCase().includes(q));
+		// .slice(0, 8);
 	});
 
 	const addTag = (tag: string) => {
@@ -91,7 +91,8 @@ export default function TagFilter(props: TagFilterProps) {
 			/>
 
 			<Show when={isOpen() && suggestions().length > 0}>
-				<ul class="absolute z-10 mt-1 w-full rounded-lg border border-gray-200 bg-white shadow-lg">
+				<ul
+					class="absolute z-10 mt-1 max-h-72 w-full overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg">
 					<For each={suggestions()}>
 						{(tag) => (
 							<li>
