@@ -1,5 +1,6 @@
 import {For} from "solid-js";
 import type {ProjectType} from "~/types/project";
+import {formatDateMDY} from "~/lib/formatDate";
 
 type ProjectCardProps = {
 	project: ProjectType;
@@ -31,7 +32,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 				</a>
 
 				<div class="mt-auto flex gap-2 text-sm text-gray-600">
-					Created {props.project.datePublished}
+					Created {formatDateMDY(props.project.datePublished)}
 				</div>
 
 				<p class="line-clamp-3 text-sm text-gray-600">

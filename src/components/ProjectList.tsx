@@ -6,6 +6,7 @@ import allProjects from "~/data/Projects.json";
 type ProjectListProps = {
 	projects?: ProjectType[];
 	selectedTags?: string[];
+	sortOrder?: "asc" | "desc";
 	onTagClick: (tag: string) => void;
 };
 
@@ -13,15 +14,26 @@ export default function ProjectList(props: ProjectListProps) {
 	const baseProjects = () => props.projects ?? (allProjects as ProjectType[]);
 
 	const filteredProjects = createMemo(() => {
-		const tags = props.selectedTags ?? [];
-		if (tags.length === 0) return baseProjects();
+			const tags = props.selectedTags ?? [];
+			const order = props.sortOrder ?? "desc";
 
-		return baseProjects().filter((project) =>
-			tags.every((tag) =>
-				project.stack.some((s) => s.toLowerCase() === tag.toLowerCase())
-			)
-		);
-	});
+			const filtered = tags.length === 0
+				? baseProjects()
+				: baseProjects().filter((project) => tags.every((tag) => project.stack.some((s) => s.toLowerCase() === tag.toLowerCase())))
+
+			return [...filtered].sort((a, b) => {
+				const diff = a.datePublished.localeCompare(b.datePublished);
+				return order === "asc" ? diff : -diff;
+			});
+		}
+
+		// if (tags.length === 0) return baseProjects();
+
+		// return baseProjects().filter((project) =>
+		// 	tags.every((tag) =>
+		// 		project.stack.some((s) => s.toLowerCase() === tag.toLowerCase())
+		// 	)
+	);
 
 	return (
 		<Show
