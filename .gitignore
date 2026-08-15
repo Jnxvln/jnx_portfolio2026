@@ -1,3 +1,7 @@
+# --- Custom ---
+*.zip
+*.7z
+
 # --- SolidStart / Vinxi / Vite ---
 dist/
 .output/

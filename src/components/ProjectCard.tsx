@@ -8,13 +8,24 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
+	// Conditional linking: send visitors to the live site when one exists,
+	// and only fall back to the internal detail page when it doesn't
+	// (e.g. hardware/hobby projects like the ESP32 timeclock with no live URL).
+	const hasLiveSite = () => Boolean(props.project.websiteUrl);
+	const primaryHref = () => props.project.websiteUrl || `/projects/${props.project.slug}`;
+	const primaryLinkProps = () =>
+		hasLiveSite()
+			? {target: "_blank", rel: "noopener noreferrer"}
+			: {};
+
 	return (
 		<article
 			class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
 			<a
-				href={`/projects/${props.project.slug}`}
-				title={`View details for ${props.project.name}`}
+				href={primaryHref()}
+				title={hasLiveSite() ? `Visit live site for ${props.project.name}` : `View details for ${props.project.name}`}
 				class="block overflow-hidden"
+				{...primaryLinkProps()}
 			>
 				<img
 					src={props.project.thumbnail}
@@ -25,7 +36,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 			</a>
 
 			<div class="flex flex-1 flex-col gap-3 p-4">
-				<a href={`/projects/${props.project.slug}`}>
+				<a href={primaryHref()} {...primaryLinkProps()}>
 					<h3 class="text-lg font-semibold text-gray-900 hover:underline">
 						{props.project.name}
 					</h3>

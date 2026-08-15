@@ -13,3 +13,72 @@ h1 {}
 p {}
 
 @media (min-width: 480px) {}
+
+/* pageContent block layouts */
+
+.page-block {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  margin-block: 3rem;
+}
+
+.block-text-only {
+  grid-template-columns: 1fr;
+  margin-block: 1rem;
+}
+
+/* 1 image: text + image side by side */
+.block-image-right {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.block-image-left {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.block-image-left img {
+  order: -1;
+}
+
+/* 2 images: staggered pair, offset vertically */
+.block-stagger,
+.block-stagger-flipped {
+  grid-template-columns: 1fr 1fr;
+}
+
+.block-stagger img:first-child {
+  margin-top: 0;
+}
+
+.block-stagger img:last-child {
+  margin-top: 3rem;
+}
+
+.block-stagger-flipped img:first-child {
+  margin-top: 3rem;
+}
+
+.block-stagger-flipped img:last-child {
+  margin-top: 0;
+}
+
+/* image scaling: never stretch, keep aspect, center */
+.page-block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
+/* collapse to stacked on small viewports */
+@media (max-width: 640px) {
+  .page-block {
+    grid-template-columns: 1fr !important;
+  }
+
+  .page-block img {
+    order: 0;
+    margin-top: 0;
+  }
+}

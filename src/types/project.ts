@@ -1,4 +1,5 @@
-import {ISODateString} from "~/types/common";
+import { ISODateString } from "~/types/common";
+import type { PageBlock } from "~/types/content";
 
 export type ProjectType = {
 	slug: string,
@@ -10,5 +11,6 @@ export type ProjectType = {
 	stack: string[],
 	datePublished: ISODateString,
 	images?: { src: string; alt: string }[],
+	pageContent?: PageBlock[],
 	featured?: boolean
 }
