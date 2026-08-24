@@ -1,0 +1,155 @@
+[
+  {
+    "slug": "project-alpha",
+    "name": "Project Alpha",
+    "description": "A fully fleshed-out example: live site, full pageContent mix, and every block variant represented.",
+    "repoUrl": "https://github.com/placeholder",
+    "websiteUrl": "https://example.com",
+    "thumbnail": "https://picsum.photos/id/121/400/300",
+    "stack": ["SolidStart", "TypeScript", "Tailwind", "Drizzle ORM"],
+    "datePublished": "2026-02-12",
+    "pageContent": [
+      {
+        "id": "article1",
+        "type": "paragraph",
+        "text": "Project Alpha started as a **weekend experiment** and grew into a full internal tool. The goal was simple: replace a spreadsheet-based workflow with something the whole team could actually use."
+      },
+      {
+        "id": "article2",
+        "type": "paragraph",
+        "text": "The dashboard view was the first thing built, since it's what most users see *every single day*. Keeping it fast mattered more than keeping it flashy.",
+        "images": [
+          { "src": "https://picsum.photos/id/201/600/400", "alt": "Project Alpha dashboard screenshot" }
+        ]
+      },
+      {
+        "id": "article3",
+        "type": "paragraph",
+        "text": "Two views of the reporting module — the summary card layout on the left, and the detailed drill-down on the right. Both pull from the same underlying query, just formatted differently.",
+        "images": [
+          { "src": "https://picsum.photos/id/202/600/400", "alt": "Project Alpha reporting summary view" },
+          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Alpha reporting detail view" }
+        ]
+      },
+      {
+        "id": "article4",
+        "type": "paragraph",
+        "text": "Check out the [live demo](https://example.com) if you want to poke around yourself. Source is also public, linked above."
+      }
+    ],
+    "images": [],
+    "featured": true
+  },
+  {
+    "slug": "project-beta",
+    "name": "Project Beta",
+    "description": "No live site — this slug page is the only place to see it. Each paragraph pairs with exactly one image.",
+    "repoUrl": "https://github.com/placeholder",
+    "thumbnail": "https://picsum.photos/id/133/400/300",
+    "stack": ["Qwik", "TypeScript", "Tailwind", "Prisma ORM"],
+    "datePublished": "2026-03-22",
+    "pageContent": [
+      {
+        "id": "article1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "article2",
+        "type": "paragraph",
+        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "images": [
+          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
+        ]
+      }
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "slug": "project-gamma",
+    "name": "Project Gamma",
+    "description": "An example of the fallback path — no pageContent at all, so the slug page falls back to the legacy image gallery grid.",
+    "repoUrl": "https://github.com/placeholder",
+    "websiteUrl": "https://example.com",
+    "thumbnail": "https://picsum.photos/id/141/400/300",
+    "stack": ["Qwik", "TypeScript", "SCSS", "Drizzle ORM"],
+    "datePublished": "2026-04-18",
+    "images": [
+      { "src": "https://picsum.photos/id/206/400/400", "alt": "Project Gamma screenshot 1" },
+      { "src": "https://picsum.photos/id/207/400/400", "alt": "Project Gamma screenshot 2" },
+      { "src": "https://picsum.photos/id/208/400/400", "alt": "Project Gamma screenshot 3" }
+    ],
+    "featured": true
+  },
+  {
+    "slug": "project-delta",
+    "name": "Project Delta",
+    "description": "A text-heavy writeup with no images anywhere in pageContent — good for testing the block-text-only layout.",
+    "repoUrl": "https://github.com/placeholder",
+    "thumbnail": "https://picsum.photos/id/144/400/300",
+    "stack": ["NextJS", "TypeScript", "Tailwind", "Prisma ORM"],
+    "datePublished": "2026-05-02",
+    "pageContent": [
+      {
+        "id": "article1",
+        "type": "paragraph",
+        "text": "Project Delta doesn't have much to look at — it's a CLI tool, so screenshots wouldn't add much. What it *does* have is a genuinely interesting build process worth writing about."
+      },
+      {
+        "id": "article2",
+        "type": "paragraph",
+        "text": "The trickiest part was handling **cross-platform path resolution** without pulling in a heavy dependency just for that one problem."
+      },
+      {
+        "id": "article3",
+        "type": "paragraph",
+        "text": "If you want to see it in action, the [README](https://github.com/placeholder) has a full walkthrough with example output."
+      }
+    ],
+    "images": [],
+    "featured": false
+  },
+  {
+    "slug": "project-epsilon",
+    "name": "Project Epsilon",
+    "description": "Opens with a plain paragraph, then a two-image staggered block — useful for checking the stagger/flip layout in isolation.",
+    "repoUrl": "https://github.com/placeholder",
+    "websiteUrl": "https://example.com",
+    "thumbnail": "https://picsum.photos/id/116/400/300",
+    "stack": ["SolidStart", "TypeScript", "Tailwind", "Drizzle ORM"],
+    "datePublished": "2026-06-27",
+    "pageContent": [
+      {
+        "id": "article1",
+        "type": "paragraph",
+        "text": "Project Epsilon is a small internal analytics view. Nothing fancy under the hood, but the UI went through a lot of revisions."
+      },
+      {
+        "id": "article2",
+        "type": "paragraph",
+        "text": "Before and after the redesign — same data, very different first impression.",
+        "images": [
+          { "src": "https://picsum.photos/id/209/600/400", "alt": "Project Epsilon before redesign" },
+          { "src": "https://picsum.photos/id/210/600/400", "alt": "Project Epsilon after redesign" }
+        ]
+      }
+    ],
+    "images": [],
+    "featured": true
+  },
+  {
+    "slug": "project-zeta",
+    "name": "Project Zeta",
+    "description": "The bare-minimum entry — no pageContent, no images. Good edge case for confirming nothing crashes when both are empty.",
+    "repoUrl": "https://github.com/placeholder",
+    "thumbnail": "https://picsum.photos/id/160/400/300",
+    "stack": ["Rust", "SQLite"],
+    "datePublished": "2026-07-09",
+    "images": [],
+    "featured": false
+  }
+]
