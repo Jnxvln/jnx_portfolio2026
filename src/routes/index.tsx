@@ -9,14 +9,15 @@ export default function Home() {
 				<Title>Justin Cox Portfolio</Title>
 
 				<div class="py-5">
-					<PageTitle title="Portfolio" isCentered/>
+					<h1 class="font-bold text-2xl text-center">Justin Cox Portfolio</h1>
+					<h3 class="font-bold text-xl text-center"><a href="https://github.com/Jnxvln" target="_blank" rel="noopener noreferrer">(@Jnxvln)</a></h3>
 				</div>
 
 				<div class="px-8">
 					<div class="flex flex-col gap-4">
 						<p>My name is Justin Cox, and I'm a software developer based in Texas.</p>
 						<p>
-							I enjoy building interactive websites and dashboards, and I like getting into lower-level work too;
+							I enjoy building interactive websites, dashboards, and even some lower-level work too, like 
 							scripting for game engines, tinkering with electronics, and figuring out how software actually drives
 							hardware.
 						</p>

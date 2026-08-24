@@ -8,18 +8,18 @@ export default function Navbar() {
 	const [isOpen, setIsOpen] = createSignal(false);
 
 	const linkClass =
-		"px-3 py-3 font-bold hover:bg-[#B2C0D4] transition duration-150 block sm:inline-block";
+		"px-3 py-3 font-bold text-white hover:bg-[#473566] transition duration-150 block sm:inline-block";
 
 	return (
-		<nav class="bg-slate-300 sticky top-0 z-50">
+		<nav class="bg-[#644A85] sticky top-0 z-50">
 			<div class="max-w-5xl mx-auto px-0 sm:px-8">
 				<div class="flex items-center justify-between">
-					<a href="/" class={linkClass} classList={{"bg-slate-400": isActive("/")}}>Home</a>
+					<a href="/" class={linkClass} classList={{"bg-[#36284F]": isActive("/")}}>Home</a>
 
 					{/*	Desktop lnks */}
 					<div class="hidden sm:flex">
-						<a href="/projects" class={linkClass} classList={{"bg-slate-400": isActive("/projects")}}>Projects</a>
-						<a href="/connect" class={linkClass} classList={{"bg-slate-400": isActive("/connect")}}>Connect</a>
+						<a href="/projects" class={linkClass} classList={{"bg-[#36284F]": isActive("/projects")}}>Projects</a>
+						<a href="/connect" class={linkClass} classList={{"bg-[#36284F]": isActive("/connect")}}>Connect</a>
 					</div>
 
 					{/*	Hamburger toggle, mobile only */}
@@ -38,14 +38,14 @@ export default function Navbar() {
 					<a
 						href="/projects"
 						class={linkClass}
-						classList={{"bg-slate-400": isActive("/projects")}}
+						classList={{"bg-[#36284F]": isActive("/projects")}}
 						onClick={() => setIsOpen(false)}
 					>Projects</a>
 
 					<a
 						href="/connect"
 						class={linkClass}
-						classList={{"bg-slate-400": isActive("/connect")}}
+						classList={{"bg-[#36284F]": isActive("/connect")}}
 						onClick={() => setIsOpen(false)}
 					>Connect</a>
 				</div>
