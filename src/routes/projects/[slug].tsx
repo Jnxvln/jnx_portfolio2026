@@ -31,7 +31,7 @@ export default function ProjectDetail() {
 
 						<img
 							src={project().thumbnail}
-							alt=""
+							alt="Project thumbnail"
 							class="w-full max-h-96 rounded-xl object-cover"
 						/>
 

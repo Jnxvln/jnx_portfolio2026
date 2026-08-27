@@ -5,6 +5,10 @@ body {
   font-size: 1.15rem;
 }
 
+p {
+  margin: 0;
+}
+
 @media (min-width: 480px) {}
 
 /* pageContent block layouts */

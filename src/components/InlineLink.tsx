@@ -9,6 +9,6 @@ export default function InlineLink({href, text, colored, external}: {
 
 	return (
 		<a href={href} class={`font-bold underline ${colored ? textColor : ''}`}
-		   target={`${external ? '_blank' : '_self'}`}>{text}</a>
+		   target={`${external ? '_blank' : '_self'}`} rel="noopener noreferrer">{text}</a>
 	)
 }

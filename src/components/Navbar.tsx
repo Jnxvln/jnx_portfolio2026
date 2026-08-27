@@ -29,12 +29,12 @@ export default function Navbar() {
 						aria-label="Toggle navigation menu"
 						aria-expanded={isOpen()}
 					>
-						<span class="font-bold">☰</span>
+						<span class="font-bold text-white">☰</span>
 					</button>
 				</div>
 
 				{/*	Mobile dropdown */}
-				<div class="flex flex-col sm:hidden" classList={{hidden: !isOpen()}}>
+				<div class="flex flex-col sm:hidden bg-[#484150]" classList={{hidden: !isOpen()}}>
 					<a
 						href="/projects"
 						class={linkClass}
