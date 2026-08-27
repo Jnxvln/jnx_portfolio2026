@@ -56,7 +56,7 @@ export default function Home() {
 							<img src="/images/esp32_project.png" alt="ESP32 project" class="w-62.5 h-auto max-w-full rounded-lg" />
 							<div class="flex flex-col gap-4">
 								<p>I have been experimenting in a few game engines lately, including Godot and Unreal Engine. I really like Godot’s ecosystem and scene-based nature, whereas Unreal is more demanding but helps me keep my C++ skills in check.</p>
-								<p>It has also been fun exploring electronics, I started with a few Arduino projects first and have recently began meddling with the ESP32. It's fun and has a great community around it that make it all the more engaging.</p>
+								<p>It has also been fun exploring electronics, I started with a few Arduino projects first and have recently begun meddling with the ESP32. It's fun and has a great community around it that make it all the more engaging.</p>
 							</div>
 						</div>
 					</article>
