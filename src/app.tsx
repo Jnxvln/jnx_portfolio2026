@@ -14,7 +14,7 @@ export default function App() {
 				<Title>Portfolio | Home</Title>
 				<div class="min-h-screen flex flex-col">
 					<Navbar/>
-					<main class="flex-1 w-full max-w-5xl mx-auto">
+					<main class="flex-1 w-full">
 						<Suspense>{props.children}</Suspense>
 					</main>
 					<Footer/>

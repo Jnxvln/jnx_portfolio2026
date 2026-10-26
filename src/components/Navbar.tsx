@@ -23,13 +23,13 @@ export default function Navbar() {
 	})
 
 	return (
-		<nav ref={navRef} class="bg-[#644A85] sticky top-0 z-50">
+		<nav ref={navRef} class="bg-[#280345] sticky top-0 z-50">
 			<div class="max-w-5xl mx-auto px-0 sm:px-8">
 				<div class="flex items-center justify-between">
 					<a 
 						href="/" 
 						class={linkClass} 
-						classList={{"bg-[#36284F]": isActive("/")}}
+						classList={{"bg-[#4A2C82]": isActive("/")}}
 						onClick={() => setIsOpen(false)}
 					>
 						Home
@@ -37,8 +37,8 @@ export default function Navbar() {
 
 					{/*	Desktop lnks */}
 					<div class="hidden sm:flex">
-						<a href="/projects" class={linkClass} classList={{"bg-[#36284F]": isActive("/projects")}}>Projects</a>
-						<a href="/connect" class={linkClass} classList={{"bg-[#36284F]": isActive("/connect")}}>Connect</a>
+						<a href="/projects" class={linkClass} classList={{"bg-[#4A2C82]": isActive("/projects")}}>Projects</a>
+						<a href="/connect" class={linkClass} classList={{"bg-[#4A2C82]": isActive("/connect")}}>Connect</a>
 					</div>
 
 					{/*	Hamburger toggle, mobile only */}
@@ -60,14 +60,14 @@ export default function Navbar() {
 					<a
 						href="/projects"
 						class={linkClass}
-						classList={{"bg-[#36284F]": isActive("/projects")}}
+						classList={{"bg-[#443166]": isActive("/projects")}}
 						onClick={() => setIsOpen(false)}
 					>Projects</a>
 
 					<a
 						href="/connect"
 						class={linkClass}
-						classList={{"bg-[#36284F]": isActive("/connect")}}
+						classList={{"bg-[#443166]": isActive("/connect")}}
 						onClick={() => setIsOpen(false)}
 					>Connect</a>
 				</div>
