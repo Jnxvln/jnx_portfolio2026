@@ -284,7 +284,7 @@
     "description": "A custom RFID employee timeclock built from scratch on the ESP32, including OLED and buzzer feedback.",
     "repoUrl": "https://github.com/Jnxvln/JxPunchKit",
     "websiteUrl": "",
-    "thumbnail": "https://picsum.photos/id/116/200/200",
+    "thumbnail": "/images/thumbnails/project_placeholder.png",
     "pageContent": [
       {
         "id": "p1",

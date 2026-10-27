@@ -27,7 +27,7 @@ export default function Home() {
 
 			{/* Introduction */}
 			<div class="max-w-5xl mx-auto">
-				<article class="flex flex-col gap-4 items-center py-12 px-8 md:flex-row">
+				<article class="flex flex-col gap-4 items-center px-8 py-12 md:flex-row md:py-[8rem]">
 					<div class="flex flex-col gap-4 pb-4">
 						<p>My name is Justin Cox, and I'm a software developer based in Texas.</p>
 						<p>

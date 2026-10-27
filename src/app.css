@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @import "prismjs/themes/prism-okaidia.min.css";
 
 body {
-  font-family: Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.15rem;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.18rem;
 }
 
 p {
