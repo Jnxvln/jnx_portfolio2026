@@ -9,7 +9,7 @@ export default function Navbar() {
 	let navRef: HTMLElement | undefined;
 
 	const linkClass =
-		"px-3 py-3 font-bold text-white hover:bg-[#473566] transition duration-150 block sm:inline-block";
+		"px-3 py-3 font-bold text-white hover:bg-nav-hover transition duration-150 block sm:inline-block";
 
 	const handleClickOutside = (e: MouseEvent) => {
 		if (navRef && !navRef.contains(e.target as Node)) {
@@ -23,13 +23,13 @@ export default function Navbar() {
 	})
 
 	return (
-		<nav ref={navRef} class="bg-[#280345] sticky top-0 z-50">
+		<nav ref={navRef} class="bg-nav-bg sticky top-0 z-50">
 			<div class="max-w-5xl mx-auto px-0 sm:px-8">
 				<div class="flex items-center justify-between">
 					<a 
 						href="/" 
 						class={linkClass} 
-						classList={{"bg-[#4A2C82]": isActive("/")}}
+						classList={{"bg-nav-active": isActive("/")}}
 						onClick={() => setIsOpen(false)}
 					>
 						Home
@@ -37,8 +37,8 @@ export default function Navbar() {
 
 					{/*	Desktop lnks */}
 					<div class="hidden sm:flex">
-						<a href="/projects" class={linkClass} classList={{"bg-[#4A2C82]": isActive("/projects")}}>Projects</a>
-						<a href="/connect" class={linkClass} classList={{"bg-[#4A2C82]": isActive("/connect")}}>Connect</a>
+						<a href="/projects" class={linkClass} classList={{"bg-nav-active": isActive("/projects")}}>Projects</a>
+						<a href="/connect" class={linkClass} classList={{"bg-nav-active": isActive("/connect")}}>Connect</a>
 					</div>
 
 					{/*	Hamburger toggle, mobile only */}
@@ -56,18 +56,18 @@ export default function Navbar() {
 				</div>
 
 				{/*	Mobile dropdown */}
-				<div class="flex flex-col sm:hidden bg-[#484150]" classList={{hidden: !isOpen()}}>
+				<div class="flex flex-col sm:hidden bg-nav-mobile-bg" classList={{hidden: !isOpen()}}>
 					<a
 						href="/projects"
 						class={linkClass}
-						classList={{"bg-[#443166]": isActive("/projects")}}
+						classList={{"bg-nav-mobile-active": isActive("/projects")}}
 						onClick={() => setIsOpen(false)}
 					>Projects</a>
 
 					<a
 						href="/connect"
 						class={linkClass}
-						classList={{"bg-[#443166]": isActive("/connect")}}
+						classList={{"bg-nav-mobile-active": isActive("/connect")}}
 						onClick={() => setIsOpen(false)}
 					>Connect</a>
 				</div>

@@ -26,6 +26,36 @@
         "alt": "Project 5 image 2"
       }
     ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "images": [
+          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
+        ]
+      }
+    ],
     "featured": false
   },
   {
@@ -90,6 +120,36 @@
         "alt": "Project 3 image 3"
       }
     ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "images": [
+          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
+        ]
+      }
+    ],
     "featured": false
   },
   {
@@ -107,6 +167,36 @@
     ],
     "datePublished": "2024-08-05",
     "images": [],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "images": [
+          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
+        ]
+      }
+    ],
     "featured": false
   },
   {
@@ -149,6 +239,42 @@
       {
         "src": "https://picsum.photos/200",
         "alt": "Project 5 image 6"
+      }
+    ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
       }
     ],
     "featured": false
@@ -234,6 +360,35 @@
         "alt": "Project 5 image 6"
       }
     ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      }
+    ],
     "featured": false
   },
   {
@@ -274,6 +429,34 @@
       {
         "src": "https://picsum.photos/200",
         "alt": "Project 5 image 6"
+      }
+    ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
       }
     ],
     "featured": false
@@ -358,6 +541,34 @@
       {
         "src": "https://picsum.photos/200",
         "alt": "Project 5 image 2"
+      }
+    ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "images": []
       }
     ],
     "featured": true

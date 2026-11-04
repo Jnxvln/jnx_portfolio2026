@@ -2,6 +2,38 @@
 @import "tailwindcss";
 @import "prismjs/themes/prism-okaidia.min.css";
 
+/* Brand colors. Each --color-* becomes a Tailwind utility: bg-nav-bg, from-hero-from, hover:text-accent, etc. */
+@theme {
+  /* Navbar */
+  --color-nav-bg: #280345;
+  --color-nav-hover: #473566;
+  --color-nav-active: #4A2C82;
+  --color-nav-mobile-bg: #484150;
+  --color-nav-mobile-active: #443166;
+
+  /* Buttons */
+  --color-button: var(--color-nav-hover);
+  --color-button-hover: var(--color-nav-active);
+
+  /* Landing page hero gradient */
+  --color-hero-from: #512573;
+  --color-hero-to: #1C2B53;
+
+  /* "View Projects" banner */
+  --color-banner-from: #07003F;
+  --color-banner-to: #0f4b9b;
+  --color-cta: #7027A7;
+  --color-cta-hover-from: #450f6e;
+  --color-cta-hover-to: #ad5d02;
+
+  /* Surfaces and accents */
+  --color-surface-tint: #F1EEFD;
+  --color-accent: #490a9c;
+
+  /* Text shadows (text-shadow-hero) */
+  --text-shadow-hero: 1px 2px 0 #000000;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;

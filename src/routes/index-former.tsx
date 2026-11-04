@@ -9,7 +9,7 @@ export default function Home() {
 				<div class="py-5">
 					<h1 class="font-bold text-3xl text-center">Justin Cox</h1>
 					<h2 class="text-lg text-center">Full-stack Developer</h2>
-					<h3 class="text-lg text-center"><a href="https://github.com/Jnxvln" target="_blank" rel="noopener noreferrer" class="text-neutral-600 underline hover:text-[#490a9c] focus-visible:text-[#490a9c]">@Jnxvln</a></h3>
+					<h3 class="text-lg text-center"><a href="https://github.com/Jnxvln" target="_blank" rel="noopener noreferrer" class="text-neutral-600 underline hover:text-accent focus-visible:text-accent">@Jnxvln</a></h3>
 				</div>
 
 				{/* Introduction */}

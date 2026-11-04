@@ -8,22 +8,20 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard(props: ProjectCardProps) {
-	// Conditional linking: send visitors to the live site when one exists,
-	// and only fall back to the internal detail page when it doesn't
-	// (e.g. hardware/hobby projects like the ESP32 timeclock with no live URL).
+	const hasDetailsPage = () => Boolean(props.project.pageContent?.length) || !hasLiveSite();
 	const hasLiveSite = () => Boolean(props.project.websiteUrl);
-	const primaryHref = () => props.project.websiteUrl || `/projects/${props.project.slug}`;
+	const primaryHref = () => hasDetailsPage() ? `/projects/${props.project.slug}` : props.project.websiteUrl;
 	const primaryLinkProps = () =>
-		hasLiveSite()
-			? {target: "_blank", rel: "noopener noreferrer"}
-			: {};
+		hasDetailsPage()
+			? {}
+			: {target: "_blank", rel: "noopener noreferrer"};
 
 	return (
 		<article
 			class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
 			<a
 				href={primaryHref()}
-				title={hasLiveSite() ? `Visit live site for ${props.project.name}` : `View details for ${props.project.name}`}
+				title={hasDetailsPage() ? `View details for ${props.project.name}` : `Visit live site for ${props.project.name}`}
 				class="block overflow-hidden"
 				{...primaryLinkProps()}
 			>
@@ -79,7 +77,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 						Source
 					</a>
 
-					{props.project.websiteUrl && (
+					{hasLiveSite() && (
 						<a
 							href={props.project.websiteUrl}
 							target="_blank"
@@ -89,6 +87,17 @@ export default function ProjectCard(props: ProjectCardProps) {
 							class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
 						>
 							Live Site
+						</a>
+					)}
+
+					{hasDetailsPage() && (
+						<a
+							href={`/projects/${props.project.slug}`}
+							title={`View details for ${props.project.name}`}
+							aria-label={`Visit details for ${props.project.name}`}
+							class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
+						>
+							View Details
 						</a>
 					)}
 				</div>

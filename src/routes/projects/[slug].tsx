@@ -2,7 +2,6 @@ import { Title } from "@solidjs/meta";
 import { useParams } from "@solidjs/router";
 import { createMemo, For, Show } from "solid-js";
 import PageTitle from "~/components/PageTitle";
-import InlineLink from "~/components/InlineLink";
 import NotFoundContent from "~/components/NotFoundContent";
 import { PageBlockRenderer } from "~/components/PageBlockRenderer";
 import { formatDateMDY } from "~/lib/formatDate";
@@ -27,7 +26,11 @@ export default function ProjectDetail() {
 					</div>
 
 					<div class="flex flex-col gap-6 max-w-5xl mx-auto px-8 pb-12">
-						<p><InlineLink href="/projects" text="&larr; Back to projects" colored/></p>
+						<p>
+							<a href="/projects" class="text-white px-4 py-2 rounded-lg bg-button hover:bg-button-hover">
+								<span>&larr; Back to Projects</span>
+							</a>
+						</p>
 
 						<img
 							src={project().thumbnail}

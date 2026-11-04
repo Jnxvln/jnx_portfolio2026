@@ -10,7 +10,7 @@ export default function Home() {
 			<Title>Justin Cox</Title>
 
 			{/* Hero */}
-			<header class="hero flex flex-col gap-6 w-full bg-linear-to-r from-[#512573] to-[#1C2B53] overflow-hidden">
+			<header class="hero flex flex-col gap-6 w-full bg-linear-to-r from-hero-from to-hero-to overflow-hidden">
 				<div class="relative">
 					<div class="absolute">
 						<span class="blur-xs">
@@ -20,7 +20,7 @@ export default function Home() {
 				</div>
 
 				<div class="flex flex-col gap-2 max-w-5xl mx-auto px-8 py-18">
-					<h1 class="text-4xl text-center font-bold text-white text-shadow-[1px_2px_0_#000000]">Justin Cox</h1>
+					<h1 class="text-4xl text-center font-bold text-white text-shadow-hero">Justin Cox</h1>
 					<h3 class="text-2xl text-center text-white opacity-70">@Jnxvln</h3>
 				</div>
 			</header>
@@ -47,7 +47,7 @@ export default function Home() {
 			<ViewProjectsBanner />
 
 			{/* Currently Exploring */}
-			<div class="bg-[#F1EEFD]">
+			<div class="bg-surface-tint">
 				<div class="flex flex-col gap-2 p-8 max-w-5xl mx-auto">
 					<header class="flex flex-col">
 						<h3 class="text-2xl font-bold">Currently Exploring</h3>
