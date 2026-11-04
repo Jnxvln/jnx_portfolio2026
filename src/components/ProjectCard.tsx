@@ -18,7 +18,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 
 	return (
 		<article
-			class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
+			class="flex w-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md">
 			<a
 				href={primaryHref()}
 				title={hasDetailsPage() ? `View details for ${props.project.name}` : `Visit live site for ${props.project.name}`}
@@ -40,7 +40,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 					</h3>
 				</a>
 
-				<div class="mt-auto flex gap-2 text-sm text-gray-600">
+				<div class="flex gap-2 text-sm text-gray-600">
 					Created {formatDateMDY(props.project.datePublished)}
 				</div>
 
@@ -48,58 +48,61 @@ export default function ProjectCard(props: ProjectCardProps) {
 					{props.project.description}
 				</p>
 
-				<ul class="flex flex-wrap gap-1.5" aria-label="Tech stack">
-					<For each={props.project.stack}>
-						{(tech) => (
-							<li>
-								<button
-									type="button"
-									title={`Filter by ${tech}`}
-									onClick={() => props.onTagClick(tech)}
-									class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 hover:cursor-pointer"
-								>
-									{tech}
-								</button>
-							</li>
-						)}
-					</For>
-				</ul>
+				{/* Tags + links pinned to the card bottom so they line up across a row */}
+				<div class="mt-auto flex flex-col gap-3">
+					<ul class="flex flex-wrap gap-1.5" aria-label="Tech stack">
+						<For each={props.project.stack}>
+							{(tech) => (
+								<li>
+									<button
+										type="button"
+										title={`Filter by ${tech}`}
+										onClick={() => props.onTagClick(tech)}
+										class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-600 hover:bg-gray-200 hover:text-gray-900 hover:cursor-pointer"
+									>
+										{tech}
+									</button>
+								</li>
+							)}
+						</For>
+					</ul>
 
-				<div class="mt-auto flex gap-4 pt-2 text-sm">
-					<a
-						href={props.project.repoUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						title={`View ${props.project.name} source on GitHub`}
-						aria-label={`View ${props.project.name} source code on GitHub, opens in a new tab`}
-						class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
-					>
-						Source
-					</a>
-
-					{hasLiveSite() && (
+					<div class="flex gap-4 pt-2 text-sm">
 						<a
-							href={props.project.websiteUrl}
+							href={props.project.repoUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							title={`Visit live site for ${props.project.name}`}
-							aria-label={`Visit live site for ${props.project.name}, opens in a new tab`}
+							title={`View ${props.project.name} source on GitHub`}
+							aria-label={`View ${props.project.name} source code on GitHub, opens in a new tab`}
 							class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
 						>
-							Live Site
+							Source
 						</a>
-					)}
 
-					{hasDetailsPage() && (
-						<a
-							href={`/projects/${props.project.slug}`}
-							title={`View details for ${props.project.name}`}
-							aria-label={`Visit details for ${props.project.name}`}
-							class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
-						>
-							View Details
-						</a>
-					)}
+						{hasLiveSite() && (
+							<a
+								href={props.project.websiteUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								title={`Visit live site for ${props.project.name}`}
+								aria-label={`Visit live site for ${props.project.name}, opens in a new tab`}
+								class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
+							>
+								Live Site
+							</a>
+						)}
+
+						{hasDetailsPage() && (
+							<a
+								href={`/projects/${props.project.slug}`}
+								title={`View details for ${props.project.name}`}
+								aria-label={`Visit details for ${props.project.name}`}
+								class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
+							>
+								View Details
+							</a>
+						)}
+					</div>
 				</div>
 			</div>
 		</article>

@@ -43,7 +43,7 @@ export default function ProjectList(props: ProjectListProps) {
 			<ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				<For each={filteredProjects()}>
 					{(project) => (
-						<li>
+						<li class="flex">
 							<ProjectCard project={project} onTagClick={props.onTagClick}/>
 						</li>
 					)}
