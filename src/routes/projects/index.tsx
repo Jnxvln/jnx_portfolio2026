@@ -31,7 +31,7 @@ export default function Projects() {
 	const clearTags = () => setSelectedTags([]);
 
 	return (
-		<main class="max-w-5xl mx-auto pb-8">
+		<div class="max-w-5xl mx-auto pb-8">
 			<Title>Projects | Justin Cox Portfolio</Title>
 			<div class="py-5">
 				<PageTitle title="Projects" isCentered/>
@@ -60,6 +60,6 @@ export default function Projects() {
 					onTagClick={addTag}
 				/>
 			</div>
-		</main>
+		</div>
 	);
 }

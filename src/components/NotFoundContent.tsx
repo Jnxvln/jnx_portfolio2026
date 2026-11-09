@@ -5,7 +5,7 @@ import InlineLink from "~/components/InlineLink";
 
 export default function NotFoundContent({title}: { title?: string }) {
 	return (
-		<main class="px-8">
+		<div class="px-8">
 			<Title>Not Found</Title>
 			<HttpStatusCode code={404}/>
 			<div>
@@ -17,6 +17,6 @@ export default function NotFoundContent({title}: { title?: string }) {
 					<p><InlineLink href="/" text="Return home" colored/></p>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }

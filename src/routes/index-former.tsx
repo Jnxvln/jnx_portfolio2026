@@ -2,7 +2,7 @@ import {Title} from "@solidjs/meta";
 
 export default function Home() {
 	return (
-		<main>
+		<div>
 			<div class="flex flex-col gap-6 max-w-5xl mx-auto">
 				<Title>Justin Cox Portfolio</Title>
 
@@ -63,6 +63,6 @@ export default function Home() {
 					</article>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }

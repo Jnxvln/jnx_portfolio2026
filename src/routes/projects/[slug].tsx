@@ -18,7 +18,7 @@ export default function ProjectDetail() {
 	return (
 		<Show when={project()} fallback={<NotFoundContent title="Project Not Found"/>}>
 			{(project) => (
-				<main>
+				<div>
 					<Title>{project().name} | Justin Cox Portfolio</Title>
 
 					<div class="py-5">
@@ -106,7 +106,7 @@ export default function ProjectDetail() {
 							</div>
 						</Show>
 					</div>
-				</main>
+				</div>
 			)}
 		</Show>
 	);
