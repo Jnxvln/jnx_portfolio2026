@@ -6,7 +6,7 @@ export default function Home() {
 	const CodeBlock = clientOnly(() => import("~/components/CodeBlock"));
 
 	return (
-		<main>
+		<div>
 			<Title>Justin Cox</Title>
 
 			{/* Hero */}
@@ -68,6 +68,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }
