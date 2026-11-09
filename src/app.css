@@ -29,10 +29,15 @@
   /* Surfaces and accents */
   --color-page-bg: #ffffff;
   --color-surface-tint: #F1EEFD;
+  --color-surface-tint-hover: #E8E3FC;
   --color-accent: #490a9c;
 
   /* Text shadows (text-shadow-hero) */
   --text-shadow-hero: 1px 2px 0 #000000;
+
+  /* Contact Page */
+  --color-email-link: #DCD4FF;
+  --color-email-link-hover: #CCBFFF;
 }
 
 /* Light-only site: pin the color scheme and paint our own background so a
