@@ -35,10 +35,10 @@ export default function Navbar() {
 						Home
 					</a>
 
-					{/*	Desktop lnks */}
+					{/*	Desktop links */}
 					<div class="hidden sm:flex">
 						<a href="/projects" class={linkClass} classList={{"bg-nav-active": isActive("/projects")}}>Projects</a>
-						<a href="/connect" class={linkClass} classList={{"bg-nav-active": isActive("/connect")}}>Connect</a>
+						<a href="/contact" class={linkClass} classList={{"bg-nav-active": isActive("/contact")}}>Contact</a>
 					</div>
 
 					{/*	Hamburger toggle, mobile only */}
@@ -65,11 +65,11 @@ export default function Navbar() {
 					>Projects</a>
 
 					<a
-						href="/connect"
+						href="/contact"
 						class={linkClass}
-						classList={{"bg-nav-mobile-active": isActive("/connect")}}
+						classList={{"bg-nav-mobile-active": isActive("/contact")}}
 						onClick={() => setIsOpen(false)}
-					>Connect</a>
+					>Contact</a>
 				</div>
 			</div>
 		</nav>
