@@ -146,3 +146,22 @@ html pre[class*="language-"] {
     margin-top: 0;
   }
 }
+
+.page-block__text a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.page-block__text a:hover {
+  color: var(--color-gray-600);
+}
+
+.page-block__text code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-800);
+}

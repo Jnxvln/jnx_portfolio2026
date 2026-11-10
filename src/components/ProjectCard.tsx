@@ -68,16 +68,18 @@ export default function ProjectCard(props: ProjectCardProps) {
 					</ul>
 
 					<div class="flex gap-4 pt-2 text-sm">
-						<a
-							href={props.project.repoUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							title={`View ${props.project.name} source on GitHub`}
-							aria-label={`View ${props.project.name} source code on GitHub, opens in a new tab`}
-							class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
-						>
-							Source
-						</a>
+						{props.project.repoUrl && (
+							<a
+								href={props.project.repoUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								title={`View ${props.project.name} source on GitHub`}
+								aria-label={`View ${props.project.name} source code on GitHub, opens in a new tab`}
+								class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
+							>
+								Source
+							</a>
+						)}
 
 						{hasLiveSite() && (
 							<a

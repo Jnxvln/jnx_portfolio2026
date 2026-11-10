@@ -1,6 +1,7 @@
 import type { JSX } from "solid-js";
 
-const INLINE_PATTERN = /\*\*(.+?)\*\*|\*(.+?)\*|\[(.+?)\]\((.+?)\)/g;
+// Inline code is matched first so markdown characters inside backticks stay literal.
+const INLINE_PATTERN = /`([^`]+)`|\*\*(.+?)\*\*|\*(.+?)\*|\[(.+?)\]\((.+?)\)/g;
 
 export function renderInlineMarkdown(text: string): JSX.Element[] {
 	const nodes: JSX.Element[] = [];
@@ -13,14 +14,22 @@ export function renderInlineMarkdown(text: string): JSX.Element[] {
 		}
 
 		if (match[1] !== undefined) {
-			nodes.push(<strong>{match[1]}</strong>);
+			nodes.push(<code>{match[1]}</code>);
 		} else if (match[2] !== undefined) {
-			nodes.push(<em>{match[2]}</em>);
-		} else if (match[3] !== undefined && match[4] !== undefined) {
+			nodes.push(<strong>{match[2]}</strong>);
+		} else if (match[3] !== undefined) {
+			nodes.push(<em>{match[3]}</em>);
+		} else if (match[4] !== undefined && match[5] !== undefined) {
+			const href = match[5];
+			const isInternal = href.startsWith("/");
 			nodes.push(
-				<a href={match[4]} target="_blank" rel="noopener noreferrer">
-					{match[3]}
-				</a>
+				isInternal ? (
+					<a href={href}>{match[4]}</a>
+				) : (
+					<a href={href} target="_blank" rel="noopener noreferrer">
+						{match[4]}
+					</a>
+				)
 			);
 		}
 
