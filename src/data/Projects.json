@@ -30,29 +30,21 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Hinman Booking was a public website for a client interested in coordinating booking services between local talent (usually bands) and local venues, with plans to expand as his business grew. The site was created as a PWA (Progressive Web App) in React and Typescript using the NextJS metaframework, with Tailwind for styling.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "The project got canceled, but I received permission to display the project as a portfolio piece. Aside from the title, the remainder of his information was replaced with placeholder pictures and data. I decided to keep a half-designed site in case anybody was interested in seeing my process before a site is finalized. This project stands as that.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Groundwork had been laid for the back end: Prisma was installed as the ORM for a planned PostgreSQL database, along with NextAuth for authentication, Nodemailer for email, and sanitize-html for cleaning user input. Nodemailer was wired up for the contact form, but the back end has since been disconnected, so the form is there for looks only. Further plans included database encryption, a registration form allowing users to maintain their accounts, create and search for available bookings, manage contracts, and much more.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
-        ]
-      },
-      {
-        "id": "p4",
-        "type": "paragraph",
-        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
-        "images": [
-          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
         ]
       }
     ],
@@ -89,12 +81,34 @@
         "alt": "Project 1 image 4"
       }
     ],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "Franklin Pearl & The Moon was one of my earliest front-end prototypes for a local band.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "The site was created with React and JavaScript using the NextJS metaframework, and Bootstrap for styling. Originally intended as a PWA (Progressive Web App), it displayed current and upcoming gigs with plans to create a dynamic QR code generator for helping visitors add gigs to their phone's calendar.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Talks were also in the works to incorporate a Redbubble store in order to sell merchandise from the website, dynamically displaying some of their latest designs on the homepage (now filled with placeholder images).",
+        "images": [
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
+        ]
+      }
+    ],
     "featured": false
   },
   {
     "slug": "juicytales-website",
     "name": "Juicy Tales Website",
-    "description": "The official website for Juicy Tale's poems, prose, and stories",
+    "description": "The official website for Juicy Tales' poems, prose, and stories",
     "repoUrl": "https://github.com/Jnxvln/juicy-tales-website",
     "websiteUrl": "https://juicy-tales-website.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_juicytales.png",
@@ -124,29 +138,29 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Juicy Tales is a client website prototype for an author who likes to write prose, stories, and occasionally lyrics for music. The prototype was never finished before the project got canceled, but I was given permission to use it as a portfolio piece.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": []
+        "text": "This project was a new type of challenge for me: an audiovisual storytelling system, where a story plays out letter-by-letter across a music track for an emotional undercurrent. The client wanted it to reflect how he wrote: one segment at a time on its own card. He had a pile of cards that were numbered, and he would read them sequentially. The dramatic pauses between cards gave a heaviness I thought we could emulate for a more dramatic effect.",
+        "images": [
+          { "src": "https://picsum.photos/id/209/600/400", "alt": "Project Beta main interface" }
+        ]
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": [
-          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
-        ]
+        "text": "The site was created with React and TypeScript using the NextJS metaframework, with Tailwind for styling. There were plans to incorporate the Prisma ORM atop a PostgreSQL database for storing the writings and site settings.",
+        "images": []
       },
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "text": "It makes heavy use of the `typewriter-effect` package for the actual display of the story content, with `react-use-audio-player` and `framer-motion` for controlling the more audiovisual aspects.",
         "images": [
-          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
+          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
       }
     ],
@@ -160,10 +174,12 @@
     "websiteUrl": "https://www.kclandandstump.com",
     "thumbnail": "/images/thumbnails/thumb_kclandandstump.png",
     "stack": [
-      "NextJS",
+      "TanStack Start",
       "React",
       "TypeScript",
-      "Tailwind"
+      "Tailwind",
+      "Prisma",
+      "PostgreSQL"
     ],
     "datePublished": "2024-08-05",
     "images": [],
@@ -171,29 +187,23 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "KC Land & Stump is the business website for Kelly Cox, based in Atlanta, TX. The site was originally built in 2024 with Next.js, and was later rebuilt from the ground up in TanStack Start.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": []
+        "text": "The site was created with TypeScript and React using the TanStack Start framework, with Tailwind for styling. It displays a variety of services offered by Kelly's company, each with their own page for additional pictures and details.",
+        "images": [
+          { "src": "https://picsum.photos/id/212/600/400", "alt": "Project Beta main interface" }
+        ]
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "The site also uses a protected admin interface where Kelly can upload his own images, choose where they display on the site, and govern his overall data across the application. It utilizes Prisma as the ORM with an underlying PostgreSQL database for storage, and strips metadata from images for safety purposes prior to storage.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
-        ]
-      },
-      {
-        "id": "p4",
-        "type": "paragraph",
-        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
-        "images": [
-          { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
         ]
       }
     ],
@@ -210,7 +220,7 @@
       "Python",
       "Typer",
       "Rich",
-      "PIL",
+      "Pillow",
       "Argon2",
       "Cryptography"
     ],
@@ -245,13 +255,13 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Stegaveil is a console-based image steganography tool built with Typer and Rich. It allows the user to embed a message directly inside an image. While the message remains hidden to the naked eye, it should be noted that experienced steganographers can still detect an embedded message; as such, it should be used with caution and for entertainment purposes only. For additional security, the message can optionally be encrypted before it's embedded, using a key derived from a password with Argon2.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Steganography is the practice of hiding information inside another medium so that nobody suspects a message is there at all. Cryptography, by contrast, makes a message unreadable without hiding that it exists. In the case of images, data is embedded in the least significant bits (or LSB) of each pixel's color values, changes too small for the eye to notice. Stegaveil is a fun approach to combining the two: steganography hides the message, and optional encryption (with Argon2 deriving the key from your password) keeps it unreadable even if someone finds it.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
@@ -259,22 +269,10 @@
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "This project was brought about by my desire to combine Rich and Typer, which I was learning about at the time, with cryptography in a Python application. Rich was used for the terminal font color and effects, while Typer was used as the application's CLI (or Command-Line Interface) in order to make a tool for other developers, and those familiar with using CLIs, to enjoy.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
-      },
-      {
-        "id": "p4",
-        "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": []
-      },
-      {
-        "id": "p5",
-        "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": []
       }
     ],
     "featured": false
@@ -364,13 +362,13 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "CHLM (or C&H Landscape Materials), a family business, is one of my longest-running projects. Started soon after I began working there in 2019, the initial goal was displaying the various materials the business sold. That objective grew in scope quickly.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Based on customer interactions in the office, I realized visitors wanted a way to narrow down what they were looking for, more detailed information about the products, and a way to estimate coverages for bulk products. That led to the development of a more organized menu with tags and filtering, a help page with an FAQ, and an interactive project calculator.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
@@ -378,14 +376,14 @@
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Needs inside our small office grew as well. I noticed repeating patterns such as having to write formulas on pages we stapled bills to by hand, manually recording and keeping track of hauls our drivers brought to the yard, etc. I realized some automation could help, so I began creating an internal company dashboard as a separate project (see [CHLM2025 Dashboard](/projects/chlm2025-dashboard-qwik)) to help us manage inter-office work -- which became the first large-scale project I've ever worked on -- and eventually [FleetTrack](/projects/fleettrack), which enabled us to track driver mileages, fuel usage, and generate useful reports.",
         "images": []
       },
       
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "The CHLM public website, the dashboard, and FleetTrack all serve as the backbone of my developer experience over the years, beyond simply learning how to code. Incorporating business needs, finding where automation can help, and anticipating future needs have taught me a lot about increasing my value to a company and its customers.",
         "images": []
       }
     ],
@@ -435,19 +433,19 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Creating my portfolio has been, in many ways, more challenging than creating applications for a company. When creating applications for others, the features and designs involved tend to evolve more organically based on need and usage, creating my portfolio has been much more personal, involving decisions I have to make alone for myself which, for some reason, has been harder for me to do.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "For some people, I'd imagine that displaying and curating what they've created comes naturally; to me it feels awkward, uncomfortable, and involves a great deal of vulnerability. I've been programming for the joy of it since I was about 13, only later in life building that into a skill that helps bring value to others, so putting that up for display is both harrowing and a feeling of accomplishment.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "I've kept the portfolio simple on purpose, the goal being to present, not distract; to make immediately available what needs to be found in a hurry, while finer details (like this detail page) are tucked away for those with the time and the interest to go digging. I constantly try to think from the vantage point of who will be using a site or application.",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
@@ -455,7 +453,7 @@
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "It is my hope that this portfolio serves not only to aid a résumé, but as an ongoing testament to my developer experience as I continue to learn and grow.",
         "images": []
       }
     ],
@@ -464,7 +462,7 @@
   {
     "slug": "jx-punchkit",
     "name": "PunchKit (ESP32)",
-    "description": "A custom RFID employee timeclock built from scratch on the ESP32, including OLED and buzzer feedback.",
+    "description": "A custom RFID employee timeclock built from scratch on the ESP32, including LCD and buzzer feedback.",
     "repoUrl": "https://github.com/Jnxvln/JxPunchKit",
     "websiteUrl": "",
     "thumbnail": "/images/thumbnails/project_placeholder.png",
@@ -472,35 +470,37 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "PunchKit is an experiment in creating my first useful electronics device, beyond simply learning how to make LEDs blink or buzzers go off.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "I first delved into electronics in 2025, having picked up an Arduino kit and worked through examples in the book. I became intrigued and wanted to learn more. Eventually, I began to feel more confident that I could create something small, I just wasn't sure what. At that time in the office where I worked, I noticed some recurring patterns in employees' hand-written timesheets: missing entries, miscalculated hours, etc. and I thought this would be the perfect situation to help with.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
-        "images": [
-          { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
-        ]
+        "text": "Some years prior, I had suggested to my employer that we look into a timekeeping system, but the interest never really escalated. So I asked if I could try to come up with my own solution which would be cheaper and (hopefully) just as efficient, and help me learn at the same time. They said yes, and that is how this project began."
       },
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "The pairing flow took a few iterations to get right — early versions required a manual device ID entry, which nobody wants to type on a phone.",
+        "text": "The device includes an RFID scanner, an LCD screen, and a buzzer. When a registered fob or keycard gets scanned, it clocks the employee in or out based on their current status, logs the date and time into a database, and includes both a message on the screen as well as a discernible beep from the buzzer depending on the situation. It prevents accidentally re-punching, and the employee can quickly check whether they've already punched in or out.",
         "images": [
           { "src": "https://picsum.photos/id/203/600/400", "alt": "Project Beta device pairing screen" }
         ]
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "Fobs/cards can be registered and unregistered, including an Admin device which can signal a report to be generated from a small dashboard. Its enclosure is just as important, as it needs to be sealed against moisture but ventilated, protecting the electronics from humidity while still allowing heat to dissipate. Overall, it was a fun and engaging project that helped me learn about how electronics work at a simple scale, while also providing something useful."
       }
     ],
     "stack": [
       "C++",
-      "ArduinoIDE",
+      "Arduino IDE",
       "ESP32",
       "RFID",
       "Electronics"
@@ -530,7 +530,9 @@
       "Prisma",
       "Tailwind",
       "PostgreSQL",
-      "Cryptography"
+      "Cryptography",
+      "Zod",
+      "TypeScript"
     ],
     "datePublished": "2025-06-19",
     "images": [
@@ -547,19 +549,19 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "The CHLM2025 Dashboard Project serves as internal tooling for the C&H Landscape Materials (CHLM) company to help better serve the office staff.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "The need for automation, precise calculations, and generating reports grew as my time of employment at C&H went on. I started noticing repetitive patterns within our office work. Up until then, my time as a developer was mostly front-end, but I started realizing I could use those skills to make life easier in the office. I don't think I realized at that time just how useful that would become.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Over time, the application grew tremendously while significantly speeding up office workflows and helping prevent calculation errors. I added routes to help manage drivers and trucks, haul entry data, vendors and their resources, and the ability to generate useful reports. Eventually the trucking end of things took off to a point that a separate application was needed for many of its functions (see my [FleetTrack](/projects/fleettrack) project).",
         "images": [
           { "src": "https://picsum.photos/id/204/600/400", "alt": "Project Beta main interface" }
         ]
@@ -567,10 +569,46 @@
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does. Project Beta is a hardware companion app with no public deployment, so this page carries the full weight of showing what it does.",
+        "text": "Beyond that, I learned how to use controls here that manipulate the separate CHLM public website (see the [CHLM2025 Website](/projects/chlm2025-website) project) to help automate seasonally-changing store hours, weather-related store closure notices, and more. The CHLM2025 Dashboard project still serves as the pillar of my developer experience. I am constantly growing and learning more which helps me derive even more value.",
         "images": []
       }
     ],
     "featured": true
+  },
+  {
+    "slug": "fleettrack",
+    "name": "FleetTrack",
+    "description": "An internal fleet tool for C&H Landscape Materials that tracks daily truck mileage and fuel receipts, flags problem entries, and generates printable fuel reports.",
+    "thumbnail": "/images/thumbnails/project_placeholder.png",
+    "stack": [
+      "Qwik",
+      "TypeScript",
+      "Tailwind",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "datePublished": "2025-07-29",
+    "images": [],
+    "pageContent": [
+      {
+        "id": "p1",
+        "type": "paragraph",
+        "text": "FleetTrack is an internal, employee-only application for C&H Landscape Materials. It began as part of the [CHLM2025 Dashboard](/projects/chlm2025-dashboard-qwik), but as the trucking side of the business grew, it needed a home of its own.",
+        "images": []
+      },
+      {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Each day, the office records the miles driven and fuel receipts for every truck in the fleet. FleetTrack keeps track of the trucks and fuel stations we use, offers autocomplete when entering receipts, and lets us filter by date range and by truck to generate print-friendly fuel reports.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "Paper receipts aren't always perfect, so I added a field-flagging system: any entry can be marked as missing, illegible, or incorrect, and flagged items are grouped in their own report so they can be followed up on and corrected. Because it holds internal company data, the source code and live application aren't publicly available.",
+        "images": []
+      }
+    ],
+    "featured": false
   }
 ]

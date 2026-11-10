@@ -5,7 +5,7 @@ export type ProjectType = {
 	slug: string,
 	name: string,
 	description: string,
-	repoUrl: string,
+	repoUrl?: string,
 	websiteUrl?: string,
 	thumbnail: string,
 	stack: string[],

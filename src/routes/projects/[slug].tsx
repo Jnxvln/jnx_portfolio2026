@@ -55,16 +55,18 @@ export default function ProjectDetail() {
 						</ul>
 
 						<div class="flex gap-4 text-sm">
-							<a
-								href={project().repoUrl}
-								target="_blank"
-								rel="noopener noreferrer"
-								title={`View ${project().name} source on GitHub`}
-								aria-label={`View ${project().name} source code on GitHub, opens in a new tab`}
-								class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
-							>
-								Source
-							</a>
+							{project().repoUrl && (
+								<a
+									href={project().repoUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									title={`View ${project().name} source on GitHub`}
+									aria-label={`View ${project().name} source code on GitHub, opens in a new tab`}
+									class="font-bold text-gray-700 hover:text-gray-900 hover:underline"
+								>
+									Source
+								</a>
+							)}
 
 							{project().websiteUrl && (
 								<a
