@@ -35,7 +35,7 @@ export default function ProjectDetail() {
 						<img
 							src={project().thumbnail}
 							alt="Project thumbnail"
-							class="w-full max-h-96 rounded-xl object-cover"
+							class="w-full max-h-96 rounded-xl object-cover object-top"
 						/>
 
 						<div class="text-sm text-gray-600">
@@ -93,7 +93,7 @@ export default function ProjectDetail() {
 													src={image.src}
 													alt={image.alt}
 													loading="lazy"
-													class="w-full aspect-square rounded-lg object-cover"
+													class="w-full aspect-square rounded-lg object-cover object-top"
 												/>
 											)}
 										</For>

@@ -29,7 +29,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 					src={props.project.thumbnail}
 					alt=""
 					loading="lazy"
-					class="aspect-square w-full max-h-56 object-cover transition-transform duration-200 hover:scale-105"
+					class="aspect-square w-full max-h-56 object-cover object-top origin-top transition-transform duration-200 hover:scale-105"
 				/>
 			</a>
 
