@@ -62,6 +62,11 @@ p {
   margin: 0;
 }
 
+/* Lock page scroll while an image viewer <dialog> is open */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
 @media (min-width: 480px) {}
 
 html pre[class*="language-"] {
@@ -101,7 +106,7 @@ html pre[class*="language-"] {
   grid-template-columns: 1fr 1.2fr;
 }
 
-.block-image-left img {
+.block-image-left .zoomable {
   order: -1;
 }
 
@@ -111,19 +116,19 @@ html pre[class*="language-"] {
   grid-template-columns: 1fr 1fr;
 }
 
-.block-stagger img:first-child {
+.block-stagger .zoomable:first-child {
   margin-top: 0;
 }
 
-.block-stagger img:last-child {
+.block-stagger .zoomable:last-child {
   margin-top: 3rem;
 }
 
-.block-stagger-flipped img:first-child {
+.block-stagger-flipped .zoomable:first-child {
   margin-top: 3rem;
 }
 
-.block-stagger-flipped img:last-child {
+.block-stagger-flipped .zoomable:last-child {
   margin-top: 0;
 }
 
@@ -141,7 +146,7 @@ html pre[class*="language-"] {
     grid-template-columns: 1fr !important;
   }
 
-  .page-block img {
+  .page-block .zoomable {
     order: 0;
     margin-top: 0;
   }

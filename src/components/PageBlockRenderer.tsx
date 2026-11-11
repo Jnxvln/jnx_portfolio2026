@@ -1,6 +1,7 @@
 import { Switch, Match, For } from "solid-js";
 import { renderInlineMarkdown } from "~/lib/inlineMarkdown";
 import type { PageBlock } from "~/types/content";
+import ZoomableImage from "~/components/ZoomableImage";
 
 function layoutClass(block: PageBlock, index: number): string {
 	const flipped = index % 2 === 1;
@@ -20,7 +21,7 @@ export function PageBlockRenderer(props: { block: PageBlock; index: number }) {
 						<p>{renderInlineMarkdown(props.block.text)}</p>
 					</div>
 					<For each={props.block.images}>
-						{(img) => <img src={img.src} alt={img.alt} />}
+						{(img) => <ZoomableImage src={img.src} alt={img.alt} />}
 					</For>
 				</div>
 			</Match>
