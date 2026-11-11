@@ -3,6 +3,7 @@ import { useParams } from "@solidjs/router";
 import { createMemo, For, Show } from "solid-js";
 import PageTitle from "~/components/PageTitle";
 import NotFoundContent from "~/components/NotFoundContent";
+import ZoomableImage from "~/components/ZoomableImage";
 import { PageBlockRenderer } from "~/components/PageBlockRenderer";
 import { formatDateMDY } from "~/lib/formatDate";
 import type { ProjectType } from "~/types/project";
@@ -32,9 +33,10 @@ export default function ProjectDetail() {
 							</a>
 						</p>
 
-						<img
+						<ZoomableImage
 							src={project().thumbnail}
-							alt="Project thumbnail"
+							alt={`${project().name} screenshot`}
+							buttonClass="w-full"
 							class="w-full max-h-96 rounded-xl object-cover object-top"
 						/>
 
@@ -89,10 +91,11 @@ export default function ProjectDetail() {
 									<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
 										<For each={project().images}>
 											{(image) => (
-												<img
+												<ZoomableImage
 													src={image.src}
 													alt={image.alt}
 													loading="lazy"
+													buttonClass="w-full rounded-lg"
 													class="w-full aspect-square rounded-lg object-cover object-top"
 												/>
 											)}
