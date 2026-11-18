@@ -1,4 +1,4 @@
-export default function InlineLink({href, text, colored, external}: {
+export default function InlineLink(props: {
 	href: string,
 	text: string,
 	colored?: boolean,
@@ -8,7 +8,7 @@ export default function InlineLink({href, text, colored, external}: {
 	const textColor = 'text-blue-700'
 
 	return (
-		<a href={href} class={`font-bold underline ${colored ? textColor : ''}`}
-		   target={`${external ? '_blank' : '_self'}`} rel="noopener noreferrer">{text}</a>
+		<a href={props.href} class={`font-bold underline ${props.colored ? textColor : ''}`}
+		   target={`${props.external ? '_blank' : '_self'}`} rel="noopener noreferrer">{props.text}</a>
 	)
 }

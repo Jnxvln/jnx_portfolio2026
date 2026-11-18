@@ -10,7 +10,6 @@ export type ProjectType = {
 	thumbnail: string,
 	stack: string[],
 	datePublished: ISODateString,
-	images?: { src: string; alt: string }[],
 	pageContent?: PageBlock[],
 	featured?: boolean
 }

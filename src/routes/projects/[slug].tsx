@@ -84,26 +84,7 @@ export default function ProjectDetail() {
 							)}
 						</div>
 
-						<Show
-							when={project().pageContent && project().pageContent!.length > 0}
-							fallback={
-								<Show when={project().images && project().images!.length > 0}>
-									<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-										<For each={project().images}>
-											{(image) => (
-												<ZoomableImage
-													src={image.src}
-													alt={image.alt}
-													loading="lazy"
-													buttonClass="w-full rounded-lg"
-													class="w-full aspect-square rounded-lg object-cover object-top"
-												/>
-											)}
-										</For>
-									</div>
-								</Show>
-							}
-						>
+						<Show when={project().pageContent && project().pageContent!.length > 0}>
 							<div class="flex flex-col">
 								<For each={project().pageContent}>
 									{(block, i) => <PageBlockRenderer block={block} index={i()} />}
