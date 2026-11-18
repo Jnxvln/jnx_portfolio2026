@@ -213,8 +213,8 @@
   },
   {
     "slug": "chlm2025-website",
-    "name": "CHLM2025 Website",
-    "description": "The official website for C&H Landscape Materials",
+    "name": "CHLM Website",
+    "description": "The public website for a landscaping materials supplier, with a filterable product catalog, a coverage calculator, and store notices managed from the internal dashboard.",
     "repoUrl": "https://github.com/Jnxvln/chlm2025-website",
     "websiteUrl": "https://www.chlandscapematerials.com",
     "thumbnail": "/images/thumbnails/thumb_chlm_website.png",
@@ -222,35 +222,45 @@
       "Qwik",
       "TypeScript",
       "Tailwind",
-      "Prisma"
+      "Prisma",
+      "PostgreSQL"
     ],
     "datePublished": "2025-10-24",
     "pageContent": [
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "CHLM (or C&H Landscape Materials), a family business, is one of my longest-running projects. Started soon after I began working there in 2019, the initial goal was displaying the various materials the business sold. That objective grew in scope quickly.",
-        "images": []
-      },
-      {
-        "id": "p2",
-        "type": "paragraph",
-        "text": "Based on customer interactions in the office, I realized visitors wanted a way to narrow down what they were looking for, more detailed information about the products, and a way to estimate coverages for bulk products. That led to the development of a more organized menu with tags and filtering, a help page with an FAQ, and an interactive project calculator.",
+        "text": "C&H Landscape Materials (CHLM) is a family business, and its website is one of my longest-running projects. I started it soon after I began working there in 2019, with the goal of showing off the materials we sell, but it grew in scope quickly.",
         "images": [
           { "src": "/images/details/chlm2025_website/materials_detail.png", "alt": "CHLM materials listing" }
         ]
       },
       {
+        "id": "p2",
+        "type": "paragraph",
+        "text": "Based on customer interactions in the office, I realized site visitors wanted a way to narrow down what they were looking for, more detailed information about the products, and a way to estimate how much material they'd need for bulk products. So I built a more organized menu with tags and filtering, a searchable help page with a FAQ section, and an interactive project calculator.",
+        "images": [
+          { "src": "/images/details/chlm2025_website/calculator_detail.png", "alt": "Project calculator estimating material for a circle border, with the result in cubic yards and loader buckets" }
+        ]
+      },
+      {
         "id": "p3",
         "type": "paragraph",
-        "text": "Needs inside our small office grew as well. I noticed repeating patterns such as having to write formulas on pages we stapled bills to by hand, manually recording and keeping track of hauls our drivers brought to the yard, etc. I realized some automation could help, so I began creating an internal company dashboard as a separate project (see [CHLM2025 Dashboard](/projects/chlm2025-dashboard-qwik)) to help us manage inter-office work -- which became the first large-scale project I've ever worked on -- and eventually [FleetTrack](/projects/fleettrack), which enabled us to track driver mileages, fuel usage, and generate useful reports.",
-        "images": []
+        "text": "At one point the website even showed our live material inventory. Management later asked for it to be taken down, but since I'd built it as a toggle in the internal dashboard, turning it off took one click. The dashboard also controls the notices customers see, like the seasonal Saturday closure. That taught me to build features so they can change without a rewrite.",
+        "images": [
+          { "src": "/images/details/chlm2025_website/notices_detail.png", "alt": "CHLM homepage showing a Saturday closure notice set from the internal dashboard" }
+        ]
       },
-      
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "The CHLM public website, the dashboard, and FleetTrack all serve as the backbone of my developer experience over the years, beyond simply learning how to code. Incorporating business needs, finding where automation can help, and anticipating future needs have taught me a lot about increasing my value to a company and its customers.",
+        "text": "Employee workflow needs inside our small office grew as well. I noticed repeating patterns such as having to hand-write formulas on the pages we stapled bills to, manually recording and keeping track of truckload hauls, and other repetitive tasks. I realized some automation could help, so I began creating a separate, internal company dashboard (see [CHLM Dashboard](/projects/chlm2025-dashboard-qwik)) to help us manage day-to-day office work, and eventually [FleetTrack](/projects/fleettrack), which tracks driver mileage and fuel usage and generates useful reports.",
+        "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "These three projects taught me more than how to code: they taught me to build around real business needs, spot where automation helps, and plan for what's coming next.",
         "images": []
       }
     ],
@@ -435,7 +445,7 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "FleetTrack is an internal, employee-only application for C&H Landscape Materials. It began as part of the [CHLM2025 Dashboard](/projects/chlm2025-dashboard-qwik), but as the trucking side of the business grew, it needed a home of its own.",
+        "text": "FleetTrack is an internal, employee-only application for C&H Landscape Materials. It began as part of the [CHLM Dashboard](/projects/chlm2025-dashboard-qwik), but as the trucking side of the business grew, it needed a home of its own.",
         "images": []
       },
       {
