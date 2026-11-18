@@ -16,16 +16,6 @@
       "Typescript"
     ],
     "datePublished": "2024-06-05",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -63,24 +53,6 @@
       "Bootstrap"
     ],
     "datePublished": "2022-06-22",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 1 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 1 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 1 image 3"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 1 image 4"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -119,20 +91,6 @@
       "Sass"
     ],
     "datePublished": "2024-06-09",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 3 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 3 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 3 image 3"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -178,7 +136,6 @@
       "PostgreSQL"
     ],
     "datePublished": "2024-08-05",
-    "images": [],
     "pageContent": [
       {
         "id": "p1",
@@ -221,32 +178,6 @@
       "Cryptography"
     ],
     "datePublished": "2025-05-19",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 3"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 4"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 5"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 6"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -278,32 +209,6 @@
       "Tailwind"
     ],
     "datePublished": "2025-06-07",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 3"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 4"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 5"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 6"
-      }
-    ],
     "featured": false
   },
   {
@@ -320,32 +225,6 @@
       "Prisma"
     ],
     "datePublished": "2025-10-24",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 3"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 4"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 5"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 6"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -391,32 +270,6 @@
       "Tailwind"
     ],
     "datePublished": "2026-07-20",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 3"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 4"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 5"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 6"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
@@ -494,21 +347,11 @@
       "Electronics"
     ],
     "datePublished": "2026-07-13",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      }
-    ],
     "featured": false
   },
   {
     "slug": "chlm2025-dashboard-qwik",
-    "name": "CHLM2025 Dashboard",
+    "name": "CHLM Dashboard",
     "description": "An internal operations dashboard built for a landscaping and materials supply company, handling everything from driver and vendor management to freight billing and daily haul tracking.",
     "repoUrl": "https://github.com/Jnxvln/chlm2025_dashboard_qwik",
     "websiteUrl": "https://chlm2025dashboardqwik-portfolio-demo.up.railway.app/",
@@ -523,42 +366,54 @@
       "TypeScript"
     ],
     "datePublished": "2025-06-19",
-    "images": [
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 1"
-      },
-      {
-        "src": "https://picsum.photos/200",
-        "alt": "Project 5 image 2"
-      }
-    ],
     "pageContent": [
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "The CHLM2025 Dashboard Project serves as internal tooling for the C&H Landscape Materials (CHLM) company to help better serve the office staff.",
+        "text": "The CHLM Dashboard is internal software I built for C&H Landscape Materials (CHLM) to handle the office's day-to-day work.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "The need for automation, precise calculations, and generating reports grew as my time of employment at C&H went on. I started noticing repetitive patterns within our office work. Up until then, my time as a developer was mostly front-end, but I started realizing I could use those skills to make life easier in the office. I don't think I realized at that time just how useful that would become.",
+        "text": "The need for automation, precise calculations, and generating reports grew the longer I worked at C&H. I started noticing repetitive patterns within our office work. Up until then, my time as a developer was mostly front-end, but I started realizing I could use those skills to make life easier in the office. I don't think I realized at that time just how useful that would become.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Over time, the application grew tremendously while significantly speeding up office workflows and helping prevent calculation errors. I added routes to help manage drivers and trucks, haul entry data, vendors and their resources, and the ability to generate useful reports. Eventually the trucking end of things took off to a point that a separate application was needed for many of its functions (see my [FleetTrack](/projects/fleettrack) project).",
+        "text": "At first, the focus was getting a navigable site up and running. The office was busy every day, so getting an MVP in front of staff quickly was vital. However, it was also the foundation, so I knew it needed to be solid. Earlier iterations of the dashboard helped shape what routes I already knew I needed, such as Drivers, Workdays, Hauls, and Vendors. I knew the biggest chunk of time and work would be implementing the Haul system, where we enter our drivers' daily trip sheet information. However, for that to work, the database schema needed a chain of dependencies: a Haul requires a Workday and a Driver, for example. A Haul also needs a Vendor Product, which requires a Vendor, and so on. Getting those relationships right was challenging and tedious, but it was essential for creating a robust system that could grow with time.",
         "images": [
-          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_detail.png", "alt": "CHLM2025 dashboard hauls view" }
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_detail.png", "alt": "CHLM dashboard hauls view" }
         ]
       },
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "Beyond that, I learned how to use controls here that manipulate the separate CHLM public website (see the [CHLM2025 Website](/projects/chlm2025-website) project) to help automate seasonally-changing store hours, weather-related store closure notices, and more. The CHLM2025 Dashboard project still serves as the pillar of my developer experience. I am constantly growing and learning more which helps me derive even more value.",
+        "text": "Once the MVP was up and running and usable within the office, I was able to breathe a bit. I began adding features like pagination and sorting, tightening form validation rules, implementing a soft-deletion system (so my co-workers couldn't accidentally delete important records permanently), adding a Waiting List (for customers waiting on materials), and more. Over time, the application started growing tremendously, causing me to split off a major trucking-related portion into its own app ([FleetTrack](/projects/fleettrack)), and I knew some housekeeping was in order.",
         "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "The codebase had grown beyond what I could easily keep track of on my own, and I needed some help. By this point I had already been tinkering with AI in smaller projects, so I instructed it to perform a full-blown audit across my codebase, giving me a bird's-eye view and helping me determine where my best effort was needed. It pointed out things like a health check endpoint that exposed more than it needed to and a login with no throttling against repeated attempts. For nearly two months I worked on cleanup and security hardening: field-level encryption for personal information, password hardening, login throttling, and tooling to rotate encryption keys if that ever became necessary. That turned out to be timely: in 2026, a major database service provider was breached. My project wasn't affected, but it drove home how essential security is.",
+        "images": [
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_demo.png", "alt": "CHLM Dashboard Demo" }
+        ]
+      },
+      {
+        "id": "p6",
+        "type": "paragraph",
+        "text": "With the hardening done, I created a public demo of the Dashboard in a sandboxed environment, filled with seed data that resets automatically, for code reviewers and interviewers to explore. If you're interested, check out the [CHLM Dashboard Demo](https://chlm2025dashboardqwik-portfolio-demo.up.railway.app/).",
+        "images": []
+      },
+      {
+        "id": "p7",
+        "type": "paragraph",
+        "text": "Beyond that, I built controls into the dashboard that update the separate CHLM public website (see the [CHLM Website](/projects/chlm2025-website) project), automating things like seasonal store hours and weather-related closure notices. This was the project where I really learned to build software, and I'm still improving it today as new needs come up in the office.",
+        "images": [
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_notices.png", "alt": "Dashboard Demo notice feature" }
+        ]
       }
     ],
     "featured": true
@@ -576,7 +431,6 @@
       "PostgreSQL"
     ],
     "datePublished": "2025-07-29",
-    "images": [],
     "pageContent": [
       {
         "id": "p1",
