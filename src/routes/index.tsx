@@ -61,9 +61,9 @@ export default function Home() {
 
 						{/* Article */}
 						<article class="flex flex-col gap-3">
-							<p>I have been experimenting in a few game engines, lately including Godot and Unreal Engine. I really like Godot’s ecosystem and scene-based nature, whereas Unreal is much more demanding but helps me keep my C++ skills in check.</p>
+							<p>I have been experimenting in a few game engines, lately including Godot and Unreal Engine. I really like Godot's ecosystem and scene-based nature, whereas Unreal is much more demanding but helps me keep my C++ skills in check.</p>
 
-							<p>I’ve also been fondly exploring electronics, having started with a few Arduino projects and recently began meddling with the ESP32. It is fun and has a great community around it that make it all the more engaging.</p>
+							<p>I've also been fondly exploring electronics, having started with a few Arduino projects and recently began meddling with the ESP32. It is fun and has a great community around it that make it all the more engaging.</p>
 						</article>
 					</div>
 				</div>

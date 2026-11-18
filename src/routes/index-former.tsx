@@ -38,7 +38,7 @@ export default function Home() {
 						</header>
 						<p>Here lately I've been updating most of my projects to prepare them for this portfolio.</p>
 						<p>
-							It's been interesting, many of these projects were started several years ago and it kind of feels like walking into a time capsule. Most of them were just half-baked ideas that I wouldn’t have considered being on a portfolio back then!
+							It's been interesting, many of these projects were started several years ago and it kind of feels like walking into a time capsule. Most of them were just half-baked ideas that I wouldn't have considered being on a portfolio back then!
 						</p>
 						<p>
 							AI has helped with reinvigorating my work throughout this process. I've been leveraging it to help me plan, design, and hit milestones throughout my projects, and it has been especially useful in helping me bring old codebases up-to-date.
@@ -56,7 +56,7 @@ export default function Home() {
 						<div class="flex flex-col gap-4 md:flex-row">
 							<img src="/images/esp32_project.png" alt="ESP32 project" class="w-62.5 h-auto max-w-full rounded-lg" />
 							<div class="flex flex-col gap-4">
-								<p>I have been experimenting in a few game engines lately, including Godot and Unreal Engine. I really like Godot’s ecosystem and scene-based nature, whereas Unreal is more demanding but helps me keep my C++ skills in check.</p>
+								<p>I have been experimenting in a few game engines lately, including Godot and Unreal Engine. I really like Godot's ecosystem and scene-based nature, whereas Unreal is more demanding but helps me keep my C++ skills in check.</p>
 								<p>It has also been fun exploring electronics, I started with a few Arduino projects first and have recently begun meddling with the ESP32. It's fun and has a great community around it that make it all the more engaging.</p>
 							</div>
 						</div>
