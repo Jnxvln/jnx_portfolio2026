@@ -430,7 +430,7 @@
   },
   {
     "slug": "fleettrack",
-    "name": "CHLM2025 FleetTrack",
+    "name": "CHLM FleetTrack",
     "description": "An internal fleet tool for C&H Landscape Materials that tracks daily truck mileage and fuel receipts, flags problem entries, and generates printable fuel reports.",
     "thumbnail": "/images/thumbnails/thumb_fleettrack.png",
     "stack": [
@@ -445,21 +445,35 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "FleetTrack is an internal, employee-only application for C&H Landscape Materials. It began as part of the [CHLM Dashboard](/projects/chlm2025-dashboard-qwik), but as the trucking side of the business grew, it needed a home of its own.",
+        "text": "CHLM FleetTrack is an internal, employee-only application for C&H Landscape Materials. It began as part of the [CHLM Dashboard](/projects/chlm2025-dashboard-qwik), but as the trucking side of the business grew, it needed a home of its own. Because it holds internal company data, the source code and live application aren't publicly available.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Each day, the office records the miles driven and fuel receipts for every truck in the fleet. FleetTrack keeps track of the trucks and fuel stations we use, offers autocomplete when entering receipts, and lets us filter by date range and by truck to generate print-friendly fuel reports.",
+        "text": "Each day, the office records the miles driven and fuel receipts for every truck in the fleet, to help management prepare for [IFTA](https://www.iftach.org/) reporting. FleetTrack keeps track of the trucks and fuel stations we use and offers autocomplete when entering receipts.",
+        "images": []
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "I knew management would want a way to total each truck's data by state, since IFTA reporting is broken down that way, so I built a reports page with preset date ranges (daily through yearly) plus custom ranges. To maximize room on the printable report, I included a state selector as well as toggleable columns. As a small quality-of-life touch, the \"End-Dump\" preset button automatically deselects all states, reselecting only the states our end-dump drivers most commonly drive in. The states included in that preset are separately configurable.",
         "images": [
           { "src": "/images/details/chlm2025_fleettrack/fleettrack_report.png", "alt": "FleetTrack truck report" }
         ]
       },
       {
-        "id": "p3",
+        "id": "p4",
         "type": "paragraph",
-        "text": "Paper receipts aren't always perfect, so I added a field-flagging system: any entry can be marked as missing, illegible, or incorrect, and flagged items are grouped in their own report so they can be followed up on and corrected. Because it holds internal company data, the source code and live application aren't publicly available.",
+        "text": "Paper receipts aren't always perfect, nor are handwritten report annotations, so I added a field-flagging system: any field can be marked as missing, illegible, or incorrect, and flagged items are grouped in their own report so they can be followed up on and corrected.",
+        "images": [
+          { "src": "/images/details/chlm2025_fleettrack/fleettrack_flagging.png", "alt": "FleetTrack entry form with a missing mileage field flagged in red" }
+        ]
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "Data collection, filtering, and presentation are the heart of FleetTrack and will continue to improve as the company grows, offering more opportunities for me to learn and adapt as needs change.",
         "images": []
       }
     ],
