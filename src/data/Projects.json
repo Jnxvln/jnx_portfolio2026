@@ -34,7 +34,7 @@
         "type": "paragraph",
         "text": "Groundwork had been laid for the back end: Prisma was installed as the ORM for a planned PostgreSQL database, along with NextAuth for authentication, Nodemailer for email, and sanitize-html for cleaning user input. Nodemailer was wired up for the contact form, but the back end has since been disconnected, so the form is there for looks only. Further plans included database encryption, a registration form allowing users to maintain their accounts, create and search for available bookings, manage contracts, and much more.",
         "images": [
-          { "src": "/images/details/hinman_booking/hinman_booking_details.png", "alt": "Hinman Booking services" }
+          { "src": "/images/details/hinman_booking/hinman_booking_details.png", "alt": "Hinman Booking page listing the three forms artists need to submit, with a W-9 download card over a dimly lit drum kit" }
         ]
       }
     ],
@@ -65,7 +65,7 @@
         "type": "paragraph",
         "text": "The site was created with React and JavaScript using the NextJS metaframework, and Bootstrap for styling. Originally intended as a PWA (Progressive Web App), it displayed current and upcoming gigs with plans to create a dynamic QR code generator for helping visitors add gigs to their phone's calendar.",
         "images": [
-          { "src": "/images/details/franklin_pearl/franklin_pearl_details.png", "alt": "Franklin Pearl & The Moon website" }
+          { "src": "/images/details/franklin_pearl/franklin_pearl_details.png", "alt": "Franklin Pearl & The Moon homepage with band member photos, song previews, and a Next Up show card for Arrow Bar" }
         ]
       },
       {
@@ -103,7 +103,7 @@
         "type": "paragraph",
         "text": "This project was a new type of challenge for me: an audiovisual storytelling system, where a story plays out letter-by-letter across a music track for an emotional undercurrent. The client wanted it to reflect how he wrote: one segment at a time on its own card. He had a pile of cards that were numbered, and he would read them sequentially. The dramatic pauses between cards gave a heaviness I thought we could emulate for a more dramatic effect.",
         "images": [
-          { "src": "/images/details/juicy_tales/juicy_tales_details.png", "alt": "The Carnival Mind by Juicy Tales" }
+          { "src": "/images/details/juicy_tales/juicy_tales_details.png", "alt": "The Carnival Mind poem page on Juicy Tales, with the opening lines above a dark, gothic illustration" }
         ]
       },
       {
@@ -148,7 +148,7 @@
         "type": "paragraph",
         "text": "The site was created with TypeScript and React using the TanStack Start framework, with Tailwind for styling. It displays a variety of services offered by Kelly's company, each with their own page for additional pictures and details.",
         "images": [
-          { "src": "/images/details/kc_land_and_stump/kcls_detail.png", "alt": "KC Land & Stump services list" }
+          { "src": "/images/details/kc_land_and_stump/kcls_detail.png", "alt": "KC Land & Stump services page with photo cards for stump grinding, land clearing, dirt work, gravel spreading, and hauling" }
         ]
       },
       {
@@ -156,7 +156,7 @@
         "type": "paragraph",
         "text": "The site also uses a protected admin interface where Kelly can upload his own images, choose where they display on the site, and govern his overall data across the application. It utilizes Prisma as the ORM with an underlying PostgreSQL database for storage, and strips metadata from images for safety purposes prior to storage.",
         "images": [
-          { "src": "/images/details/kc_land_and_stump/kcls_detail_2.png", "alt": "Project Beta main interface" }
+          { "src": "/images/details/kc_land_and_stump/kcls_detail_2.png", "alt": "KC Land & Stump admin editor for the Hauling & Delivery page, with editable text, photo swapping, and draft and publish controls" }
         ]
       }
     ],
@@ -190,7 +190,7 @@
         "type": "paragraph",
         "text": "Steganography is the practice of hiding information inside another medium so that nobody suspects a message is there at all. Cryptography, by contrast, makes a message unreadable without hiding that it exists. In the case of images, data is embedded in the least significant bits (or LSB) of each pixel's color values, changes too small for the eye to notice. Stegaveil is a fun approach to combining the two: steganography hides the message, and optional encryption (with Argon2 deriving the key from your password) keeps it unreadable even if someone finds it.",
         "images": [
-          { "src": "/images/details/stegaveil/stegaveil_detail.png", "alt": "Decoding an encoded message using Stegaveil" }
+          { "src": "/images/details/stegaveil/stegaveil_detail.png", "alt": "Stegaveil running in the browser, encoding a quote into an image and then decoding it back out" }
         ]
       }
     ],
@@ -232,7 +232,7 @@
         "type": "paragraph",
         "text": "C&H Landscape Materials (CHLM) is a family business, and its website is one of my longest-running projects. I started it soon after I began working there in 2019, with the goal of showing off the materials we sell, but it grew in scope quickly.",
         "images": [
-          { "src": "/images/details/chlm2025_website/materials_detail.png", "alt": "CHLM materials listing" }
+          { "src": "/images/details/chlm2025_website/materials_detail.png", "alt": "CHLM materials page filtered to Gravel / Rock, showing gravel cards with sizes, bin numbers, descriptions, and tags" }
         ]
       },
       {
@@ -298,7 +298,7 @@
         "type": "paragraph",
         "text": "As for this portfolio itself, I've kept it simple on purpose. The goal is to present, not distract: to put the important information up front while tucking the finer details away for those who want to dig deeper. Thinking from the point of view of whoever will be using an application has taught me how to make a more meaningful impact.",
         "images": [
-          { "src": "/images/details/jnx_portfolio_2026/jnxvln_projects_detail.png", "alt": "Jnxvln projects display" }
+          { "src": "/images/details/jnx_portfolio_2026/jnxvln_projects_detail.png", "alt": "Portfolio projects page with a tag filter, sort menu, and project cards showing tech stack tags and links" }
         ]
       },
       {
@@ -340,7 +340,7 @@
         "type": "paragraph",
         "text": "The device includes an RFID scanner, an LCD screen, and a buzzer. When a registered fob or keycard gets scanned, it clocks the employee in or out based on their current status, logs the date and time into a database, and includes both a message on the screen as well as a discernible beep from the buzzer depending on the situation. It prevents accidentally re-punching, and the employee can quickly check whether they've already punched in or out.",
         "images": [
-          { "src": "/images/details/punchkit/punchkit_detail.png", "alt": "PunchKit in progress, featuring the ESP32" }
+          { "src": "/images/details/punchkit/punchkit_detail.png", "alt": "ESP32 board on a red breakout PCB next to a small display showing live temperature, humidity, and pressure readings" }
         ]
       },
       {
@@ -394,7 +394,7 @@
         "type": "paragraph",
         "text": "At first, the focus was getting a navigable site up and running. The office was busy every day, so getting an MVP in front of staff quickly was vital. However, it was also the foundation, so I knew it needed to be solid. Earlier iterations of the dashboard helped shape what routes I already knew I needed, such as Drivers, Workdays, Hauls, and Vendors. I knew the biggest chunk of time and work would be implementing the Haul system, where we enter our drivers' daily trip sheet information. However, for that to work, the database schema needed a chain of dependencies: a Haul requires a Workday and a Driver, for example. A Haul also needs a Vendor Product, which requires a Vendor, and so on. Getting those relationships right was challenging and tedious, but it was essential for creating a robust system that could grow with time.",
         "images": [
-          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_detail.png", "alt": "CHLM dashboard hauls view" }
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_detail.png", "alt": "CHLM Dashboard hauls view filtered by driver and date, with workdays expanded to show each haul's route, material, and tonnage" }
         ]
       },
       {
@@ -408,7 +408,7 @@
         "type": "paragraph",
         "text": "The codebase had grown beyond what I could easily keep track of on my own, and I needed some help. By this point I had already been tinkering with AI in smaller projects, so I instructed it to perform a full-blown audit across my codebase, giving me a bird's-eye view and helping me determine where my best effort was needed. It pointed out things like a health check endpoint that exposed more than it needed to and a login with no throttling against repeated attempts. For nearly two months I worked on cleanup and security hardening: field-level encryption for personal information, password hardening, login throttling, and tooling to rotate encryption keys if that ever became necessary. That turned out to be timely: in 2026, a major database service provider was breached. My project wasn't affected, but it drove home how essential security is.",
         "images": [
-          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_demo.png", "alt": "CHLM Dashboard Demo" }
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_demo.png", "alt": "CHLM Dashboard demo login page, with a public demo banner and the demo credentials shown" }
         ]
       },
       {
@@ -422,7 +422,7 @@
         "type": "paragraph",
         "text": "Beyond that, I built controls into the dashboard that update the separate CHLM public website (see the [CHLM Website](/projects/chlm2025-website) project), automating things like seasonal store hours and weather-related closure notices. This was the project where I really learned to build software, and I'm still improving it today as new needs come up in the office.",
         "images": [
-          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_notices.png", "alt": "Dashboard Demo notice feature" }
+          { "src": "/images/details/chlm2025_dashboard/chlm2025_dashboard_notices.png", "alt": "Dashboard website notices page listing notices that appear on the public CHLM homepage, with type, display dates, and status" }
         ]
       }
     ],
@@ -459,7 +459,7 @@
         "type": "paragraph",
         "text": "I knew management would want a way to total each truck's data by state, since IFTA reporting is broken down that way, so I built a reports page with preset date ranges (daily through yearly) plus custom ranges. To maximize room on the printable report, I included a state selector as well as toggleable columns. As a small quality-of-life touch, the \"End-Dump\" preset button automatically deselects all states, reselecting only the states our end-dump drivers most commonly drive in. The states included in that preset are separately configurable.",
         "images": [
-          { "src": "/images/details/chlm2025_fleettrack/fleettrack_report.png", "alt": "FleetTrack truck report" }
+          { "src": "/images/details/chlm2025_fleettrack/fleettrack_report.png", "alt": "FleetTrack reports page with period, truck, state, and column filters above a weekly fleet report broken down by state" }
         ]
       },
       {
