@@ -165,7 +165,7 @@
   {
     "slug": "stegaveil-project",
     "name": "Stegaveil CLI",
-    "description": "Command-line image steganography tool with optional encryption, built with Typer and Rich. (Optional web demo available)",
+    "description": "A command-line tool that hides messages inside images, with optional password-based encryption and a browser demo that runs the real CLI.",
     "repoUrl": "https://github.com/Jnxvln/stegaveil",
     "websiteUrl": "https://jnxvln.github.io/stegaveil/",
     "thumbnail": "/images/thumbnails/thumb_stegaveil.png",
@@ -175,23 +175,42 @@
       "Rich",
       "Pillow",
       "Argon2",
-      "Cryptography"
+      "Cryptography",
+      "Pyodide"
     ],
     "datePublished": "2025-05-19",
     "pageContent": [
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Stegaveil is a console-based image steganography tool built with Typer and Rich. It allows the user to embed a message directly inside an image. While the message remains hidden to the naked eye, it should be noted that experienced steganographers can still detect an embedded message; as such, it should be used with caution and for entertainment purposes only. For additional security, the message can optionally be encrypted before it's embedded, using a key derived from a password with Argon2.",
+        "text": "Stegaveil started in May 2025 as \"Stegaboo.\" I'd been working through Typer CLI tutorials while experimenting with steganography on the side, so combining the two felt like a natural first command-line project. It was also my first project built with AI from the very start, which made it as much about learning to direct AI-written code as about the code itself.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "Steganography is the practice of hiding information inside another medium so that nobody suspects a message is there at all. Cryptography, by contrast, makes a message unreadable without hiding that it exists. In the case of images, data is embedded in the least significant bits (or LSB) of each pixel's color values, changes too small for the eye to notice. Stegaveil is a fun approach to combining the two: steganography hides the message, and optional encryption (with Argon2 deriving the key from your password) keeps it unreadable even if someone finds it.",
+        "text": "Steganography hides the fact that a message exists at all, while cryptography makes a message unreadable without hiding it. Stegaveil does both. It writes each bit of a message into the lowest bit of a pixel's red, green, and blue values, a change too small for the eye to notice, and it can optionally encrypt the message first so it stays unreadable even if someone finds it.",
         "images": [
           { "src": "/images/details/stegaveil/stegaveil_detail.png", "alt": "Stegaveil running in the browser, encoding a quote into an image and then decoding it back out" }
         ]
+      },
+      {
+        "id": "p3",
+        "type": "paragraph",
+        "text": "When I came back to it in 2026, the playful Stegaboo branding no longer fit, and neither did some of its internals: messages were stored as plain text, ended with a marker string a message could accidentally contain, and had no encryption at all. I rebuilt it from scratch as Stegaveil. Each message now starts with a small header recording its length, so any text decodes correctly, and optional encryption uses AES-256-GCM with a key derived from your password by Argon2id. A wrong password or a tampered image fails loudly instead of returning garbage.",
+        "images": []
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "To make it easy to try, I added a [live demo](https://jnxvln.github.io/stegaveil/) that runs the actual Python package in the browser through WebAssembly, so nothing you upload leaves your device. Getting it working meant handling details like Argon2's use of multiple threads, which the browser's Python runtime doesn't support.",
+        "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "Stegaveil isn't meant for serious secrecy: simple least-significant-bit hiding can be detected with statistical analysis. What it gave me was a lesson in the difference between code that works and code I understand, and going back through a project I hadn't written by hand is what turned it into one I can explain.",
+        "images": []
       }
     ],
     "featured": false
