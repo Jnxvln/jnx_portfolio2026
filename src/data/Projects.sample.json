@@ -91,7 +91,7 @@
     "description": "A text-heavy writeup with no images anywhere in pageContent — good for testing the block-text-only layout.",
     "repoUrl": "https://github.com/placeholder",
     "thumbnail": "https://picsum.photos/id/144/400/300",
-    "stack": ["NextJS", "TypeScript", "Tailwind", "Prisma ORM"],
+    "stack": ["Next.js", "TypeScript", "Tailwind", "Prisma ORM"],
     "datePublished": "2026-05-02",
     "pageContent": [
       {
