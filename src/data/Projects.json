@@ -7,7 +7,7 @@
     "websiteUrl": "https://hinman-booking.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_hinman_booking.png",
     "stack": [
-      "NextJS",
+      "Next.js",
       "PWA",
       "React",
       "Prisma",
@@ -20,7 +20,7 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Hinman Booking was a public website for a client interested in coordinating booking services between local talent (usually bands) and local venues, with plans to expand as his business grew. The site was created as a PWA (Progressive Web App) in React and Typescript using the NextJS metaframework, with Tailwind for styling.",
+        "text": "Hinman Booking was a public website for a client interested in coordinating booking services between local talent (usually bands) and local venues, with plans to expand as his business grew. The site was created as a PWA (Progressive Web App) in React and Typescript using the Next.js metaframework, with Tailwind for styling.",
         "images": []
       },
       {
@@ -48,7 +48,7 @@
     "websiteUrl": "https://franklin-pearl-and-the-moon-9jmufbhye-jnxvlns-projects.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_franklinpearl.png",
     "stack": [
-      "NextJS",
+      "Next.js",
       "React",
       "Bootstrap"
     ],
@@ -63,7 +63,7 @@
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "The site was created with React and JavaScript using the NextJS metaframework, and Bootstrap for styling. Originally intended as a PWA (Progressive Web App), it displayed current and upcoming gigs with plans to create a dynamic QR code generator for helping visitors add gigs to their phone's calendar.",
+        "text": "The site was created with React and JavaScript using the Next.js metaframework, and Bootstrap for styling. Originally intended as a PWA (Progressive Web App), it displayed current and upcoming gigs with plans to create a dynamic QR code generator for helping visitors add gigs to their phone's calendar.",
         "images": [
           { "src": "/images/details/franklin_pearl/franklin_pearl_details.png", "alt": "Franklin Pearl & The Moon homepage with band member photos, song previews, and a Next Up show card for Arrow Bar" }
         ]
@@ -84,7 +84,7 @@
     "websiteUrl": "https://juicy-tales-website.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_juicytales.png",
     "stack": [
-      "NextJS",
+      "Next.js",
       "React",
       "TypeScript",
       "Tailwind",
@@ -109,7 +109,7 @@
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "The site was created with React and TypeScript using the NextJS metaframework, with Tailwind for styling. There were plans to incorporate the Prisma ORM atop a PostgreSQL database for storing the writings and site settings.",
+        "text": "The site was created with React and TypeScript using the Next.js metaframework, with Tailwind for styling. There were plans to incorporate the Prisma ORM atop a PostgreSQL database for storing the writings and site settings.",
         "images": []
       },
       {
@@ -123,7 +123,7 @@
   {
     "slug": "kc-land-and-stump-website",
     "name": "KC Land & Stump Website",
-    "description": "The official website for KC Land And Stump",
+    "description": "The website for a family land clearing business, with a custom admin panel for managing its own photos and pages.",
     "repoUrl": "https://github.com/Jnxvln/kc-land-and-stump-2",
     "websiteUrl": "https://www.kclandandstump.com",
     "thumbnail": "/images/thumbnails/thumb_kclandandstump.png",
@@ -140,13 +140,13 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "KC Land & Stump is the business website for Kelly Cox, based in Atlanta, TX. The site was originally built in 2024 with Next.js, and was later rebuilt from the ground up in TanStack Start.",
+        "text": "KC Land & Stump is the website for my dad Kelly's land clearing business in Atlanta, TX, built to advertise his services and give the company an online presence. The site was originally built in 2024 with Next.js, and was later rebuilt from the ground up in 2026 with TanStack Start.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "The site was created with TypeScript and React using the TanStack Start framework, with Tailwind for styling. It displays a variety of services offered by Kelly's company, each with their own page for additional pictures and details.",
+        "text": "I switched frameworks for two reasons: overhead, and a chance to learn. Next.js is great for many things, but it was overkill for what was then a handful of static pages, and choosing a stack that fit the project from the start was my biggest lesson here. I was already learning TanStack Start, so migrating the site while revamping it felt like a natural step.",
         "images": [
           { "src": "/images/details/kc_land_and_stump/kcls_detail.png", "alt": "KC Land & Stump services page with photo cards for stump grinding, land clearing, dirt work, gravel spreading, and hauling" }
         ]
@@ -154,10 +154,16 @@
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "The site also uses a protected admin interface where Kelly can upload his own images, choose where they display on the site, and govern his overall data across the application. It utilizes Prisma as the ORM with an underlying PostgreSQL database for storage, and strips metadata from images for safety purposes prior to storage.",
+        "text": "While the original site was live, Kelly often asked me to swap in photos from new jobs. He needed more than a photo gallery; he needed control over his own content. So I built a protected admin interface where he can upload photos, choose where they appear, and edit his pages with drafts before publishing. Behind it, Prisma and PostgreSQL store the data, and every upload is resized and stripped of metadata like GPS location before it's stored.",
         "images": [
           { "src": "/images/details/kc_land_and_stump/kcls_detail_2.png", "alt": "KC Land & Stump admin editor for the Hauling & Delivery page, with editable text, photo swapping, and draft and publish controls" }
         ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Resizing images, working with object storage, stripping metadata, and building a small custom CMS were all new to me in this redesign. The biggest takeaway was how much a simple content tool can change things for a client: Kelly can now keep his site current on his own, and it reflects his work as it happens.",
+        "images": []
       }
     ],
     "featured": false
