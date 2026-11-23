@@ -2,7 +2,7 @@
     {
     "slug": "hinman-booking",
     "name": "Hinman Booking Website",
-    "description": "The official public website for Hinman Booking (archived demo).",
+    "description": "The public website for a local music booking business, built as the first piece of a larger booking platform (archived demo).",
     "repoUrl": "https://github.com/Jnxvln/hinman-booking/",
     "websiteUrl": "https://hinman-booking.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_hinman_booking.png",
@@ -13,29 +13,41 @@
       "Prisma",
       "Tailwind",
       "SASS",
-      "Typescript"
+      "TypeScript"
     ],
     "datePublished": "2024-06-05",
     "pageContent": [
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Hinman Booking was a public website for a client interested in coordinating booking services between local talent (usually bands) and local venues, with plans to expand as his business grew. The site was created as a PWA (Progressive Web App) in React and Typescript using the Next.js metaframework, with Tailwind for styling.",
+        "text": "Hinman Booking was the website for a small business that booked local musicians with local venues. I built it in mid-2024 with Next.js, TypeScript, Tailwind, and Sass, had a working site deployed in about a week, and later turned it into a Progressive Web App. It was only ever shared with a handful of the musicians and venues the owner already worked with.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "The project got canceled, but I received permission to display the project as a portfolio piece. Aside from the title, the remainder of his information was replaced with placeholder pictures and data. I decided to keep a half-designed site in case anybody was interested in seeing my process before a site is finalized. This project stands as that.",
+        "text": "The public site was meant to be the first piece of a much larger booking platform, possibly split into a public site and a separate dashboard. The owner would create venues and bookings, and users would create one or more Artist profiles, since one person might play solo and in several bands. I kept the term \"Artist\" broad on purpose so it could fit however people used the service. From their profiles, artists would manage current and past bookings, request new ones, and browse an events board where the owner posted open bookings, showing each artist only the ones that matched their budget, style of music, and instrumentation. I started on that dashboard in early 2025, but the details were never fully worked out before the business closed.",
         "images": []
       },
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Groundwork had been laid for the back end: Prisma was installed as the ORM for a planned PostgreSQL database, along with NextAuth for authentication, Nodemailer for email, and sanitize-html for cleaning user input. Nodemailer was wired up for the contact form, but the back end has since been disconnected, so the form is there for looks only. Further plans included database encryption, a registration form allowing users to maintain their accounts, create and search for available bookings, manage contracts, and much more.",
+        "text": "Until that system existed, booking worked the old-fashioned way: the booking page lists the forms an artist needs to download, fill out, and email back. It was always meant as a stopgap. Behind the scenes, the contact form sent email through Nodemailer with sanitize-html cleaning the input, and Prisma was set up for the PostgreSQL database the accounts would eventually need.",
         "images": [
           { "src": "/images/details/hinman_booking/hinman_booking_details.png", "alt": "Hinman Booking page listing the three forms artists need to submit, with a W-9 download card over a dimly lit drum kit" }
         ]
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "The part I'm least proud of is authentication. Over about two months I started with NextAuth, switched to a custom JWT and cookie setup, went back to NextAuth, tried Lucia, then removed it all and started NextAuth over again. I kept reading pros and cons instead of making a decision. The business eventually closed for reasons that had nothing to do with the site, but auth still wasn't settled when it did. The lesson stuck: today I'd try an option in a short spike, pick one, and commit to it, because switching back and forth burns time without moving the product forward.",
+        "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "When the business closed, the owner gave me permission to keep the site as a portfolio piece. I turned off outgoing email, replaced his contact details and private documents with placeholders, and left the rest as it was when work stopped. The photos are stock images from Pexels and Pixabay or early AI-generated images, meant to be replaced with real bands and venues. The landing page is unfinished too: its lower sections were designed to hold much more than the text that's there now. I've kept it this way as an honest look at a project mid-build.",
+        "images": []
       }
     ],
     "featured": false
