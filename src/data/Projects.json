@@ -55,12 +55,13 @@
   {
     "slug": "franklin-pearl",
     "name": "Franklin Pearl & The Moon Website",
-    "description": "A progressive web app for the Franklin Pearl & The Moon band",
+    "description": "A prototype website for my band, built as a Progressive Web App in 2022 and revived in 2026.",
     "repoUrl": "https://github.com/Jnxvln/franklin-pearl-and-the-moon",
     "websiteUrl": "https://franklin-pearl-and-the-moon-9jmufbhye-jnxvlns-projects.vercel.app/",
     "thumbnail": "/images/thumbnails/thumb_franklinpearl.png",
     "stack": [
       "Next.js",
+      "PWA",
       "React",
       "Bootstrap"
     ],
@@ -69,13 +70,13 @@
       {
         "id": "p1",
         "type": "paragraph",
-        "text": "Franklin Pearl & The Moon was one of my earliest front-end prototypes for a local band.",
+        "text": "Franklin Pearl & The Moon is a local band I play keys in, and this site was one of my earliest front-end projects. I built it over a few weeks in May and June 2022 as a prototype of what a band website could look like. The band hasn't decided it needs a website yet, so for now it stays a prototype.",
         "images": []
       },
       {
         "id": "p2",
         "type": "paragraph",
-        "text": "The site was created with React and JavaScript using the Next.js metaframework, and Bootstrap for styling. Originally intended as a PWA (Progressive Web App), it displayed current and upcoming gigs with plans to create a dynamic QR code generator for helping visitors add gigs to their phone's calendar.",
+        "text": "It's built with Next.js 12 and React, styled with CSS Modules and React Bootstrap, and set up as a Progressive Web App with next-pwa so fans could install it on their phones. The homepage introduces the band members, features two songs, and shows a \"Next Up\" card for the upcoming gig, with a Shows page listing the rest. The play buttons next to the two songs were meant to play a pair of hardcoded tracks using the browser's built-in audio, no music service required.",
         "images": [
           { "src": "/images/details/franklin_pearl/franklin_pearl_details.png", "alt": "Franklin Pearl & The Moon homepage with band member photos, song previews, and a Next Up show card for Arrow Bar" }
         ]
@@ -83,7 +84,20 @@
       {
         "id": "p3",
         "type": "paragraph",
-        "text": "Talks were also in the works to incorporate a Redbubble store in order to sell merchandise from the website, dynamically displaying some of their latest designs on the homepage (now filled with placeholder images)."
+        "text": "The feature I was most excited about never got built. The plan was a protected page where we could enter a show's title, start and end time, location, description, and an optional cover charge, then generate a QR code from it. Anyone interested in coming could scan the code and have the event added to their phone's calendar. The Next Up card still has the one static QR code from that time, made for a single show at Arrow Bar.",
+        "images": []
+      },
+      {
+        "id": "p4",
+        "type": "paragraph",
+        "text": "Our drummer is also into graphic design, so we planned to design products and sell them through a Redbubble store, with the newest designs shown on the homepage. The store was created but never stocked, which is why the merch section still uses placeholder images. Rather than send visitors to an empty store, I've since pointed the Merch link back to the homepage, along with the \"Listen to More\" link, since we never set up a SoundCloud account either.",
+        "images": []
+      },
+      {
+        "id": "p5",
+        "type": "paragraph",
+        "text": "In August 2026 I brought the project back to life. Node 16 had reached end of life, so I moved it to Node 24, fixed a next-pwa config error that broke the build, worked around a Next.js image loader bug, and shrank a 17 MB image down to 1.4 MB to clear the PWA's precache warnings. I also removed dead routes and leftover Heroku scripts, and replaced a generic third-party privacy policy with an honest one that reflects what the site actually collects: nothing.",
+        "images": []
       }
     ],
     "featured": false
