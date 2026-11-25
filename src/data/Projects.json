@@ -248,21 +248,6 @@
     "featured": false
   },
   {
-    "slug": "djlyrithm-project",
-    "name": "DJ Lyrithm Website",
-    "description": "The official website for DJ Lyrithm's songs and prose.",
-    "repoUrl": "https://github.com/Jnxvln/djlyrithm",
-    "websiteUrl": "https://djlyrithm.vercel.app/",
-    "thumbnail": "/images/thumbnails/thumb_djlyrithm.png",
-    "stack": [
-      "SvelteKit",
-      "Svelte",
-      "Tailwind"
-    ],
-    "datePublished": "2025-06-07",
-    "featured": false
-  },
-  {
     "slug": "chlm2025-website",
     "name": "CHLM Website",
     "description": "The public website for a landscaping materials supplier, with a filterable product catalog, a coverage calculator, and store notices managed from the internal dashboard.",
@@ -364,7 +349,7 @@
   {
     "slug": "jx-punchkit",
     "name": "PunchKit (ESP32)",
-    "description": "A custom RFID employee timeclock built from scratch on the ESP32, including LCD and buzzer feedback.",
+    "description": "A custom RFID employee timeclock built from scratch on the ESP32, with OLED screen and buzzer feedback.",
     "repoUrl": "https://github.com/Jnxvln/JxPunchKit",
     "websiteUrl": "",
     "thumbnail": "/images/thumbnails/project_placeholder.png",
@@ -389,7 +374,7 @@
       {
         "id": "p4",
         "type": "paragraph",
-        "text": "The device includes an RFID scanner, an LCD screen, and a buzzer. When a registered fob or keycard gets scanned, it clocks the employee in or out based on their current status, logs the date and time into a database, and includes both a message on the screen as well as a discernible beep from the buzzer depending on the situation. It prevents accidentally re-punching, and the employee can quickly check whether they've already punched in or out.",
+        "text": "The prototype is an ESP32 on a breadboard with an RC522 RFID reader, a small SSD1306 OLED screen, a DS3231 real-time clock, and a buzzer. Scanning a registered fob or card clocks that employee in or out based on their current status, and the screen shows their name, IN or OUT, and the time. Each result gets its own beep pattern, so it's clear without looking whether a punch worked, came from the admin card, or came from an unknown card. A short cooldown keeps a single tap from punching twice. The clock stores UTC and converts to local time with one offset constant, so a daylight saving change is a one-line edit. I also reworked the buzzer, screen, and cooldown to use non-blocking timing, so the device stays responsive instead of freezing while a beep plays.",
         "images": [
           { "src": "/images/details/punchkit/punchkit_detail.png", "alt": "ESP32 board on a red breakout PCB next to a small display showing live temperature, humidity, and pressure readings" }
         ]
@@ -397,7 +382,7 @@
       {
         "id": "p5",
         "type": "paragraph",
-        "text": "Fobs/cards can be registered and unregistered, including an Admin device which can signal a report to be generated from a small dashboard. Its enclosure is just as important, as it needs to be sealed against moisture but ventilated, protecting the electronics from humidity while still allowing heat to dissipate. Overall, it was a fun and engaging project that helped me learn about how electronics work at a simple scale, while also providing something useful."
+        "text": "It's still a work in progress, and the rest is planned. Punches will be saved to a database, or possibly synced to Google Sheets, instead of only being shown on screen. Fobs and cards will be registered and unregistered from the device, and the admin card will trigger a timesheet report on a small dashboard. Last comes an enclosure that keeps moisture out while still letting heat escape. It's been a fun way to learn electronics, and it's headed toward something the office can actually use."
       }
     ],
     "stack": [
